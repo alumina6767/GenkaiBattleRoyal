@@ -1,0 +1,7 @@
+{
+    "values": [
+        "battle:load",
+        "battle:effect/high_knockback/load",
+        "battle:item/bits/load"
+    ]
+}
