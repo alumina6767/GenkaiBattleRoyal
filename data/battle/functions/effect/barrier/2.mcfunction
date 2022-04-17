@@ -14,8 +14,7 @@ execute store result score _ _ run data get entity @s Owner[3]
 execute as @a if score @s uuid3 = _ _ run tag @s add owner
 
 ## パーティクル
-particle end_rod ~ ~ ~ 0 0 0 0.1 10 force
-#particle block_marker barrier ~ ~ ~ 0 0 0 0.1 3 force
+execute positioned ~ ~1.5 ~ facing entity @s eyes positioned as @s run function battle:effect/barrier/particle
 
 ## 音
 playsound block.anvil.place player @a ~ ~ ~ 1.0 2.0 0.0
