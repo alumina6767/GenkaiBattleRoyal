@@ -2,6 +2,9 @@
 # 毎ティック実行
 # @public
 
+scoreboard players add clock battle 1
+scoreboard players operation clock battle %= interval battle
+
 # 死亡したプレイヤーを監視
 #execute as @a[scores={battle.death=1..}] run function battle:death/
 
@@ -23,3 +26,14 @@
 ## スライムジャンプ
 function battle:effect/jump_small_2/tick
 #function battle:effect/jump/tick
+
+# ## ボスを見ている時 弱体化エフェクト
+# execute as @a[predicate=battle:looking_at_player] run function battle:effect/weak
+
+# ## ボスの近くに矢が来た時 弾く
+# execute as @a[tag=battle.boss] at @s run function battle:effect/barrier/
+
+#function battle:effect/barrier/tick
+
+## コンパスの更新
+execute if score clock battle matches 0 run function battle:item/compass/tick

@@ -1,20 +1,14 @@
 {
     "type": "minecraft:command",
-    "pools": [
-        {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:ender_eye",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{bits:5000,CustomModelData:670002}"
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
+    "pools": [{
+        "rolls": 1,
+        "entries": [{
+            "type": "minecraft:item",
+            "name": "minecraft:ender_eye",
+            "functions": [{
+                "function": "minecraft:set_nbt",
+                "tag": "{bits:5000,CustomModelData:670002}"
+            }]
+        }]
+    }]
 }

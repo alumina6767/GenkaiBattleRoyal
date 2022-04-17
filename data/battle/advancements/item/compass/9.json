@@ -1,0 +1,33 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "check_inventory"
+              },
+              "score": "battle"
+            },
+            "range": 1
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{Inventory:[{Slot:-106b,id:\"minecraft:compass\"}]}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "battle:item/compass/9"
+  }
+}

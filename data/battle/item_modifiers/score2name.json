@@ -1,12 +1,10 @@
-[
-    {
-        "function": "minecraft:set_name",
-        "entity": "this",
-        "name": {
-            "score": {
-                "name": "_",
-                "objective": "_"
-            }
+[{
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": {
+        "score": {
+            "name": "_",
+            "objective": "_"
         }
     }
-]
+}]
