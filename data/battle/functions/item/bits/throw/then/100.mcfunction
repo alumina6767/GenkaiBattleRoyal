@@ -38,4 +38,4 @@ scoreboard players set check_inventory battle 1
 
 ## tick
 schedule function battle:item/bits/throw/tick 1t append
-#schedule function battle:item/bits/throw/tick2 1t append
+schedule function battle:item/bits/throw/tick2 1t append
