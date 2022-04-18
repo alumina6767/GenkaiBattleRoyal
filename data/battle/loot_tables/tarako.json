@@ -1,0 +1,20 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:silverfish_spawn_egg",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"たらこ\"}'},summon:tarako,EntityTag:{CustomNameVisible:1b,DeathLootTable:\"empty\",PersistenceRequired:1b,Tags:[\"level1\",\"tarako\"]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+

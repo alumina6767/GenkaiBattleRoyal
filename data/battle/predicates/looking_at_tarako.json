@@ -4,11 +4,11 @@
   "predicate": {
     "player": {
       "looking_at": {
-        "type": "minecraft:player",
-        "nbt": "{Tags:[\"battle.boss\"]}",
+        "type": "minecraft:silverfish",
+        "nbt": "{Tags:[\"tarako\"]}",
         "distance": {
           "absolute": {
-            "max": 10
+            "max": 5
           }
         }
       }

@@ -23,12 +23,13 @@ team add C
 team add D
 team add E
 team add F
+team add G
 
 ## 汎用スコアボード
 scoreboard objectives add battle dummy
 
 scoreboard players set clock battle -1
-scoreboard players set interval battle 2
+scoreboard players set interval battle 10
 
 scoreboard players set compass.slot battle 0
 scoreboard players set slot battle 10

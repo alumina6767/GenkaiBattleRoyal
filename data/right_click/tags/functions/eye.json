@@ -1,5 +1,6 @@
 {
     "values": [
-        "battle:item/bits/throw/if"
+        "battle:item/bits/throw/if",
+        "battle:item/umeneri/if"
     ]
 }
