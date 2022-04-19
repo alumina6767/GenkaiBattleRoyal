@@ -13,7 +13,8 @@ tag @e[type=silverfish,tag=tarako,tag=!tamed,sort=nearest,limit=1] add target
 tag @e[type=silverfish,tag=tarako,tag=target] add tamed
 
 ## メッセージ
-execute if entity @e[type=silverfish,tag=tamed] run tellraw @s "たらこを召喚した!!"
+execute if entity @e[type=silverfish,tag=tamed] run function battle:title_reset
+execute if entity @e[type=silverfish,tag=tamed] run title @s subtitle "たらこを召喚した!!"
 
 ## チームに入れる
 execute if entity @s[team=A] positioned ^ ^ ^1 run team join A @e[type=silverfish,tag=target]
@@ -24,8 +25,14 @@ execute if entity @s[team=E] positioned ^ ^ ^1 run team join E @e[type=silverfis
 execute if entity @s[team=F] positioned ^ ^ ^1 run team join F @e[type=silverfish,tag=target]
 execute if entity @s[team=G] positioned ^ ^ ^1 run team join G @e[type=silverfish,tag=target]
 
+## スコアを付与
+scoreboard players set @e[type=silverfish,tag=tarako,tag=target] battle -1
+
 ## タグを消去
 tag @e[type=silverfish,tag=tarako,tag=target] remove target
 
 ## 進捗をリセット
 advancement revoke @s only battle:item/tame_tarako
+
+## tickを起動
+schedule function battle:item/umeneri/tick/ 1t append

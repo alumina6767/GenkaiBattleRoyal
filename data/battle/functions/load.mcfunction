@@ -10,6 +10,7 @@
     #declare score_holder compass.slot
     #declare score_holder slot
     #declare score_holder check_inventory
+    #declare score_holder tarako.interval
 
 ## 最大HP
 scoreboard objectives add max_health dummy
@@ -37,3 +38,7 @@ scoreboard players set slot battle 10
 scoreboard objectives add battle.compass.slot dummy
 
 scoreboard players set check_inventory battle 1
+
+## たらこ
+scoreboard players set tarako.interval battle 60
+scoreboard objectives add interval.umeneri dummy

@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"たらこ\"}'},summon:tarako,EntityTag:{CustomNameVisible:1b,DeathLootTable:\"empty\",PersistenceRequired:1b,Tags:[\"level1\",\"tarako\"]}}"
+              "tag": "{display:{Name:'{\"text\":\"たらこ\",\"italic\":false}',Lore:['[{\"keybind\":\"key.use\",\"italic\":false},{\"text\":\"でたらこを召喚する\",\"italic\":false}]']},summon:tarako,EntityTag:{CustomNameVisible:1b,DeathLootTable:\"empty\",PersistenceRequired:1b,Health:5f,Tags:[\"level1\",\"tarako\"],Attributes:[{Name:generic.max_health,Base:5},{Name:generic.follow_range,Base:20}]},CustomModelData:670011}"
             }
           ]
         }

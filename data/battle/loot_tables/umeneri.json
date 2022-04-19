@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:670010,display:{Name:'{\"text\":\"うめねり\"}'}}"
+              "tag": "{display:{Name:'{\"text\":\"うめねり\",\"italic\":false}',Lore:['[{\"keybind\":\"key.use\",\"italic\":false},{\"text\":\"で近くのたらこをレベルアップさせる\",\"italic\":false}]']},CustomModelData:670010}"
             }
           ]
         }

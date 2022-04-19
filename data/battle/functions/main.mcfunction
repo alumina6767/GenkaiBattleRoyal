@@ -39,4 +39,4 @@ function battle:effect/barrier/tick
 execute if score clock battle matches 0 run function battle:item/compass/tick
 
 ## たらこ
-execute if score clock battle matches 0 run function battle:item/umeneri/tick
+execute if score clock battle matches 0 run schedule function battle:item/umeneri/tick/ 1t append
