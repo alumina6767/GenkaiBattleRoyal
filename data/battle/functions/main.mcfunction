@@ -14,21 +14,14 @@ scoreboard players operation clock battle %= interval battle
 #execute as @a[nbt={Health:0.0f}] run say boka-nn
 #execute as @a[scores={death=1}] run say hoo
 
-## 死亡時に復活
-#execute as @a[scores={death=1..}] at @s run function battle:revival
-
-## スポーンポイントを随時更新
-#execute as alumina6767 at @s run spawnpoint @s ~ ~ ~ ~
-
-#execute as @a[nbt={OnGround:0b}, tag=!air] at @s run summon area_effect_cloud ~ ~2 ~ {Duration:40,Effects:[{Id:25b,Amplifier:80b,Duration:40}],Radius:3}
-
-
 ## スライムジャンプ
 function battle:effect/jump_small_2/tick
 #function battle:effect/jump/tick
 
-## ボスを見ている時 弱体化エフェクト
-execute as @a[predicate=battle:looking_at_player] run function battle:effect/weak
+## ボスを見ている時 弱体化エフェクト 極まれにジャンプ切りするとダメージが入る
+execute as @a[tag=looking_at_boss,predicate=!battle:looking_at_boss] run function battle:effect/weak_clear
+execute as @a[tag=!battle.boss,predicate=battle:looking_at_boss] run function battle:effect/weak
+#execute as @a[tag=battle.boss] at @s run function battle:effect/weak_area
 
 ## ボスの近くに矢が来た時 弾く
 execute as @a[tag=battle.boss] at @s run function battle:effect/barrier/

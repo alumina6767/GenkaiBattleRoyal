@@ -1,7 +1,10 @@
 #> battle:effect/weak
 # @internal
 
-title @s times 0 2 0
-title @s title "みるなぼけ"
+#> 
+# @internal
+    #declare tag looking_at_boss
 
-#tellraw @a [{"selector":"@s"},{"text": "が誰かを見た"}]
+title @s actionbar "今はこのボスにダメージを与えることが出来ない！！"
+effect give @s weakness 200000 100 false
+tag @s add looking_at_boss
