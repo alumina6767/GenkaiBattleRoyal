@@ -1,0 +1,7 @@
+{
+  "criteria": {
+    "playing": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

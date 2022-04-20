@@ -5,16 +5,8 @@
       "conditions": {
         "player": [
           {
-            "condition": "minecraft:value_check",
-            "value": {
-              "type": "minecraft:score",
-              "target": {
-                "type": "minecraft:fixed",
-                "name": "check_inventory"
-              },
-              "score": "battle"
-            },
-            "range": 1
+            "condition": "reference",
+            "name": "battle:check_inventory"
           },
           {
             "condition": "minecraft:entity_properties",
