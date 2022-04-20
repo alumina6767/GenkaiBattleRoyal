@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "player": [
+        ],
+        "block": "minecraft:crafting_table"
+      }
+    }
+  },
+  "rewards": {
+    "function": "battle:launch_crafting_table/"
+  }
+}
