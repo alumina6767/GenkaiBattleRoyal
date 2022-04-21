@@ -24,7 +24,7 @@
                                     "items": [
                                         "minecraft:firework_star"
                                     ],
-                                    "nbt": "{jump_pad:1b}"
+                                    "nbt": "{JumpPad:1b}"
                                 }
                             }
                         }
