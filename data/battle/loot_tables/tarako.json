@@ -9,7 +9,45 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"たらこ\",\"italic\":false}',Lore:['[{\"keybind\":\"key.use\",\"italic\":false},{\"text\":\"でたらこを召喚する\",\"italic\":false}]']},summon:tarako,EntityTag:{CustomNameVisible:1b,DeathLootTable:\"empty\",PersistenceRequired:1b,Health:5f,Tags:[\"level1\",\"tarako\"],Attributes:[{Name:generic.max_health,Base:5},{Name:generic.follow_range,Base:20}]},CustomModelData:670011}"
+              "tag": "{summon:tarako,EntityTag:{CustomNameVisible:1b,DeathLootTable:\"empty\",PersistenceRequired:1b,Health:5f,Tags:[\"level1\",\"tarako\"],Attributes:[{Name:generic.max_health,Base:5},{Name:generic.follow_range,Base:20}]},CustomModelData:670011}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "たらこ",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "世にも恐ろしいモンスターを使役出来る",
+                  "color": "#f65bfe",
+                  "italic": false
+                },
+                "",
+                [
+                  {
+                    "keybind": "key.use",
+                    "color": "#ff6c2d",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": ": ",
+                    "color": "#ff6c2d",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "たらこを召喚する",
+                    "color": "#fdbd1a",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              ]
             }
           ]
         }
@@ -17,4 +55,3 @@
     }
   ]
 }
-

@@ -9,7 +9,45 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"うめねり\",\"italic\":false}',Lore:['[{\"keybind\":\"key.use\",\"italic\":false},{\"text\":\"で近くのたらこをレベルアップさせる\",\"italic\":false}]']},CustomModelData:670010}"
+              "tag": "{CustomModelData:670010}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "うめねり",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "たらこの好物。ご飯にかけてもうまい。",
+                  "color": "#f65bfe",
+                  "italic": false
+                },
+                "",
+                [
+                  {
+                    "keybind": "key.use",
+                    "color": "#ff6c2d",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": ": ",
+                    "color": "#ff6c2d",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "近くのたらこをレベルアップさせる",
+                    "color": "#fdbd1a",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              ]
             }
           ]
         }

@@ -1,0 +1,36 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:compass",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{BossTracked:1b,LodestoneDimension:\"minecraft:overworld\",LodestoneTracked:0b,LodestonePos:{X:0,Y:0,Z:0}}"
+            },
+                        {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "ボスどこんぱす",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "ボスの位置を指し示す",
+                  "color": "#f65bfe",
+                  "italic": false
+                }
+                ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
