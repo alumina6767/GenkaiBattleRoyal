@@ -12,4 +12,4 @@ execute if score compass.slot battle matches 5 if score @s battle.compass.slot m
 execute if score compass.slot battle matches 6 if score @s battle.compass.slot matches 6 run item modify entity @s hotbar.6 battle:compass_update
 execute if score compass.slot battle matches 7 if score @s battle.compass.slot matches 7 run item modify entity @s hotbar.7 battle:compass_update
 execute if score compass.slot battle matches 8 if score @s battle.compass.slot matches 8 run item modify entity @s hotbar.8 battle:compass_update
-execute if score compass.slot battle matches 9 if score @s battle.compass.slot matches 9 run item modify entity @s weapon.offhand battle:compass_update
+execute if score compass.slot battle matches 9 if score @s battle.compass.slot matches -106 run item modify entity @s weapon.offhand battle:compass_update
