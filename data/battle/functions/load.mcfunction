@@ -42,3 +42,6 @@ scoreboard players set check_inventory battle 1
 ## たらこ
 scoreboard players set tarako.interval battle 60
 scoreboard objectives add interval.umeneri dummy
+
+## ジャンプパッド
+scoreboard objectives add battle.jump_pad.par dummy
