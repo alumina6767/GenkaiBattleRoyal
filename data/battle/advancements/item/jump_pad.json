@@ -3,18 +3,7 @@
         "requirement": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
-                "player": [{
-                        "condition": "minecraft:value_check",
-                        "value": {
-                            "type": "minecraft:score",
-                            "target": {
-                                "type": "minecraft:fixed",
-                                "name": "check_inventory"
-                            },
-                            "score": "battle"
-                        },
-                        "range": 1
-                    },
+                "player": [
                     {
                         "condition": "minecraft:entity_properties",
                         "entity": "this",

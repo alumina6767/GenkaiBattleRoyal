@@ -9,7 +9,7 @@
     #declare tag jump_pad_small2
 
 ## スライムを消す
-execute as @e[type=slime,tag=jump_pad_small2.hover,tag=!new] at @s run tp ~ -200 ~
+execute as @e[type=slime,tag=jump_pad_small2.hover,tag=!new] at @s run tp ~ -500 ~
 tag @e[type=slime,tag=new] remove new
 
 ## 浮遊を消す
