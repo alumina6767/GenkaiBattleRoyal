@@ -11,4 +11,4 @@ execute if entity @s[team=E] run tag @p[gamemode=survival,distance=..8,team=!E] 
 execute if entity @s[team=F] run tag @p[gamemode=survival,distance=..8,team=!F] add target
 execute if entity @s[team=G] run tag @p[gamemode=survival,distance=..8,team=!G] add target
 
-execute if entity @a[tag=target] run function battle:item/umeneri/tuba2
+execute if entity @a[tag=target,distance=..8,limit=1] run function battle:item/umeneri/tuba2
