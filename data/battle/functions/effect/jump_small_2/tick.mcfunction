@@ -4,17 +4,18 @@
 
 #>
 # @within battle:effect/jump_small_2/**
-    #declare tag jump_pad_small2.hover
+    #declare tag jpad_s2.ec
 # @internal
-    #declare tag jump_pad_small2
+    #declare tag jpad_s2
 
 ## スライムを消す
-execute as @e[type=slime,tag=jump_pad_small2.hover,tag=!new] at @s run tp ~ -500 ~
+execute as @e[type=slime,tag=jpad_s2,tag=new] at @s run tp ~ -500 ~
 tag @e[type=slime,tag=new] remove new
 
-## 浮遊を消す
-execute as @a[tag=jump_pad_small2] run function battle:effect/jump_small_2/jumpped
+## 浮遊を若干遅らせて消す
+execute as @a[tag=jpad_s2.ec] run function battle:effect/jump_small_2/effect_clear
+execute as @a[tag=jpad_s2] run function battle:effect/jump_small_2/jumpped
 
 ## ジャンプし始めに浮遊エフェクト
-#execute as @a at @s positioned ~ ~-1.1 ~ if entity @e[type=falling_block,tag=jump_pad_small2,dy=1,distance=..0.8] positioned ~ ~1.1 ~ run function battle:effect/jump_small_2/jump
-execute at @e[type=falling_block,tag=jump_pad_small2] positioned ~ ~1.1 ~ as @a[dy=-1,distance=..0.8] at @s run function battle:effect/jump_small_2/jump
+execute as @a[gamemode=!spectator] at @s run function battle:effect/jump_small_2/check_pad
+#execute at @e[type=falling_block,tag=jpad_s2] positioned ~ ~1.1 ~ as @a[tag=!jpad_s2,dy=-1,distance=..0.8] at @s run function battle:effect/jump_small_2/jump

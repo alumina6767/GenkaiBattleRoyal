@@ -8,7 +8,7 @@ function share:swap_main_off
 scoreboard players set check_inventory battle 1
 
 ## ジャンプパッド
-execute rotated ~ ~ positioned ^ ^ ^1 run summon falling_block ~ ~-0.3 ~ {BlockState:{Name:"minecraft:slime_block"},NoGravity:1b,Time:300,DropItem:false,Tags:["new","jump_pad_small2"]}
+execute rotated ~ ~ positioned ^ ^ ^1 run summon falling_block ~ ~-0.3 ~ {BlockState:{Name:"minecraft:slime_block"},NoGravity:1b,Time:300,DropItem:false,Tags:["new","jpad_s2"]}
 
 ## 音
 function battle:item/jump_pad_small_2/sound

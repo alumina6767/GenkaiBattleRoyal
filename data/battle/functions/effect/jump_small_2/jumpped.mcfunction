@@ -2,6 +2,6 @@
 # ジャンプした後
 # @internal
 
-## エフェクトを消す
-effect clear @s levitation
-tag @s remove jump_pad_small2
+## タグを付け替える
+tag @s remove jpad_s2
+tag @s add jpad_s2.ec
