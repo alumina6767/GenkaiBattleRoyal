@@ -29,7 +29,7 @@ execute if score now tmp matches -2.. run data merge block 0 -63 0 {Text2:'[{"sc
 execute if score now tmp matches -5..-3 run data merge block 0 -63 0 {Text2:'[{"score":{"name":"now","objective":"tmp"},"color":"gold"}]'}
 execute if score now tmp matches ..-6 run data merge block 0 -63 0 {Text2:'[{"score":{"name":"now","objective":"tmp"},"color":"red"}]'}
 
-summon item ~ ~1.5 ~ {CustomNameVisible:1b,Age:5980,PickupDelay:32767,Motion:[0.1,0.3,0.05],Tags:["new"],Item:{id:"minecraft:stone_button",Count:1b}}
+execute rotated ~ 0 run summon item ^ ^1.8 ^-0.5 {NoGravity:1b,CustomNameVisible:1b,Age:5980,PickupDelay:32767,Motion:[0.0,0.02,0.0],Tags:["new"],Item:{id:"minecraft:stone_button",Count:1b}}
 data modify entity @e[type=item,tag=new,limit=1] CustomName set from block 0 -63 0 Text2
 
 ## タグを消す
