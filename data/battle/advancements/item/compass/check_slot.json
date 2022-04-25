@@ -6,7 +6,7 @@
         "player": [
           {
             "condition": "reference",
-            "name": "battle:check_inventory"
+            "name": "share:check_inventory"
           }
         ]
       }

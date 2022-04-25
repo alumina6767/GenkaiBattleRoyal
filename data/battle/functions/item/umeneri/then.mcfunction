@@ -33,7 +33,7 @@ execute as @e[type=silverfish,tag=target,tag=level2] at @s run function battle:i
 execute as @e[type=silverfish,tag=target,tag=level1] at @s run function battle:item/umeneri/tolevel2
 
 ## アイテムを消費
-execute if entity @e[type=silverfish,tag=target] run function battle:remove_mainhand
+execute if entity @e[type=silverfish,tag=target] run function share:remove_mainhand
 
 ## インターバル
 execute if entity @e[type=silverfish,tag=target] run scoreboard players set @s interval.umeneri 10

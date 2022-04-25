@@ -6,7 +6,7 @@ scoreboard players add compass.slot battle 1
 scoreboard players operation compass.slot battle %= slot battle
 
 ## インベントリのチェックをオフ
-scoreboard players set check_inventory battle 0
+#scoreboard players set check_inventory flag 0
 
 ## ストレージリセット
 data remove storage tmp tmp
@@ -39,5 +39,4 @@ data remove storage tmp tmp
 data remove storage tmp lPos
 
 ## インベントリのチェックをオン
-scoreboard players set check_inventory battle 1
-
+#scoreboard players set check_inventory flag 1

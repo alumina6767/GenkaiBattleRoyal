@@ -9,7 +9,6 @@
     #declare score_holder interval
     #declare score_holder compass.slot
     #declare score_holder slot
-    #declare score_holder check_inventory
     #declare score_holder tarako.interval
 
 ## 最大HP
@@ -36,8 +35,6 @@ scoreboard players set compass.slot battle 0
 scoreboard players set slot battle 10
 
 scoreboard objectives add battle.compass.slot dummy
-
-scoreboard players set check_inventory battle 1
 
 ## たらこ
 scoreboard players set tarako.interval battle 60
