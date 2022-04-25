@@ -32,9 +32,7 @@ tag @e[type=fireball,tag=new] remove new
 scoreboard players set @s cool_down.bits 8
 
 ## アイテムを消費
-scoreboard players set check_inventory battle 0
-item modify entity @s weapon.mainhand share:remove_count
-scoreboard players set check_inventory battle 1
+function share:remove_mainhand
 
 ## tick
 schedule function battle:item/bits/throw/tick 1t append
