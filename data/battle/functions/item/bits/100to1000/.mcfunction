@@ -10,9 +10,6 @@
 ## メインハンドとオフハンドをスワップ
 function share:swap_main_off
 
-## 個数を取得
-execute store result score count tmp run data get entity @s SelectedItem.Count 1
-
 ## 繰り上げる個数を取得
 scoreboard players operation _ _ = count tmp
 scoreboard players operation _ _ /= 10 const
@@ -39,6 +36,3 @@ title @s reset
 title @s times 5 30 5
 title @s subtitle "より高額なbitsに変換した！"
 title @s title ""
-
-## 進捗のリセット
-advancement revoke @s only battle:bits/100to1000

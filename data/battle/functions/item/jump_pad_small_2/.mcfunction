@@ -16,6 +16,3 @@ execute at @e[type=falling_block,tag=new] run particle end_rod ~ ~1 ~ 1 1 1 0.01
 
 ## タグを消す
 tag @e[type=falling_block,tag=new] remove new
-
-## 進捗をリセット
-advancement revoke @s only battle:item/jump_pad
