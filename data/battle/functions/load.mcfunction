@@ -30,15 +30,3 @@ scoreboard objectives add battle dummy
 
 scoreboard players set clock battle -1
 scoreboard players set interval battle 10
-
-scoreboard players set compass.slot battle 0
-scoreboard players set slot battle 10
-
-scoreboard objectives add battle.compass.slot dummy
-
-## たらこ
-scoreboard players set tarako.interval battle 60
-scoreboard objectives add interval.umeneri dummy
-
-## ジャンプパッド
-scoreboard objectives add battle.jump_pad.par dummy

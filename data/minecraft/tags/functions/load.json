@@ -2,6 +2,9 @@
     "values": [
         "battle:load",
         "battle:effect/high_knockback/load",
-        "battle:item/bits/load"
+        "battle:item/bits/load",
+        "battle:item/compass/load",
+        "battle:item/jump_pad_small_2/load",
+        "battle:item/umeneri/load"
     ]
 }
