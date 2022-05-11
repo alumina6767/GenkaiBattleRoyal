@@ -2,6 +2,7 @@
     "values": [
         "battle:item/bits/throw/if",
         "battle:item/umeneri/if",
-        "battle:item/gonkane/if"
+        "battle:item/gonkane/if",
+        "battle:item/gutitubo/if"
     ]
 }
