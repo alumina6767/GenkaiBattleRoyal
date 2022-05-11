@@ -11,7 +11,7 @@
               "function": "minecraft:set_nbt",
               "tag": "{BossTracked:1b,LodestoneDimension:\"minecraft:overworld\",LodestoneTracked:0b,LodestonePos:{X:0,Y:0,Z:0}}"
             },
-                        {
+            {
               "function": "minecraft:set_name",
               "name": {
                 "text": "ボスどこんぱす",
@@ -26,7 +26,7 @@
                   "color": "#f65bfe",
                   "italic": false
                 }
-                ]
+              ]
             }
           ]
         }

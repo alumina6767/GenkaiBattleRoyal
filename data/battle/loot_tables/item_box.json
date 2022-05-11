@@ -1,0 +1,65 @@
+{
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "battle:bits/100",
+          "weight": 40
+        },
+        {
+          "type": "loot_table",
+          "name": "battle:bits/1000",
+          "weight": 20
+        },
+        {
+          "type": "loot_table",
+          "name": "battle:bits/5000",
+          "weight": 5
+        },
+        {
+          "type": "loot_table",
+          "name": "battle:bits/10000",
+          "weight": 2
+        },
+        {
+          "type": "loot_table",
+          "name": "battle:bits/100000",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "battle:jump_pad",
+          "weight": 20
+        },
+        {
+          "type": "loot_table",
+          "name": "battle:tarako",
+          "weight": 20
+        },
+        {
+          "type": "loot_table",
+          "name": "battle:umeneri",
+          "weight": 20
+        },
+        {
+          "type": "item",
+          "name": "minecraft:arrow",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 3
+            }
+          ],
+          "weight": 50
+        },
+        {
+            "type": "loot_table",
+            "name" :"main:soudan_arrow",
+            "weight": 10
+        }
+      ]
+    }
+  ]
+}
