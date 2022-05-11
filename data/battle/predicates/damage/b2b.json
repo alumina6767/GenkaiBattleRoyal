@@ -1,0 +1,17 @@
+[
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "team": "B"
+    }
+  },
+  {
+    "condition": "minecraft:damage_source_properties",
+    "predicate": {
+      " direct_entity": {
+        "team": "B"
+      }
+    }
+  }
+]
