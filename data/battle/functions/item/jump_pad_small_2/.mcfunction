@@ -5,6 +5,9 @@
 ## メインハンドとオフハンドをスワップ
 function share:swap_main_off
 
+## 数を減らす
+function share:remove_mainhand
+
 ## ジャンプパッド
 execute rotated ~ ~ positioned ^ ^ ^1 run summon falling_block ~ ~-0.3 ~ {BlockState:{Name:"minecraft:slime_block"},NoGravity:1b,Time:300,DropItem:false,Tags:["new","jpad_s2"]}
 
