@@ -1,14 +1,110 @@
 {
-    "type": "minecraft:command",
-    "pools": [{
-        "rolls": 1,
-        "entries": [{
-            "type": "minecraft:item",
-            "name": "minecraft:ender_eye",
-            "functions": [{
-                "function": "minecraft:set_nbt",
-                "tag": "{bits:5000,CustomModelData:670002}"
-            }]
-        }]
-    }]
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ender_eye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{bits:5000,CustomModelData:670002}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "思いのこもった投げ銭",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "思いのあまり爆発するビッツを投げる。その爆風は味方をも襲う。",
+                  "color": "#f65bfe",
+                  "italic": false
+                },
+                "",
+                [
+                  {
+                    "keybind": "key.use",
+                    "color": "#ff6c2d",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": ": ",
+                    "color": "#ff6c2d",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "ストレートで投げる",
+                    "color": "#fdbd1a",
+                    "bold": false,
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "keybind": "key.sneak",
+                    "color": "#ff6c2d",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": " + ",
+                    "color": "#ff6c2d",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "keybind": "key.use",
+                    "color": "#ff6c2d",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": ": ",
+                    "color": "#ff6c2d",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "山なりに投げる",
+                    "color": "#fdbd1a",
+                    "bold": false,
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "keybind": "key.swapOffhand",
+                    "color": "#ff6c2d",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": ": ",
+                    "color": "#ff6c2d",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "高額なビッツに変換する",
+                    "color": "#fdbd1a",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
