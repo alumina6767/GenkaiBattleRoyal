@@ -6,9 +6,6 @@
 scoreboard players add compass.slot battle 1
 scoreboard players operation compass.slot battle %= 10 const
 
-## インベントリのチェックをオフ
-#scoreboard players set check_inventory flag 0
-
 ## ストレージリセット
 data remove storage tmp tmp
 data remove storage tmp lPos
@@ -38,6 +35,3 @@ execute if entity @a[team=G,tag=battle.boss,limit=1] as @a[team=G,tag=!battle.bo
 ## ストレージリセット
 data remove storage tmp tmp
 data remove storage tmp lPos
-
-## インベントリのチェックをオン
-#scoreboard players set check_inventory flag 1

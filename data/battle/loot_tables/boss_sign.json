@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:oak_sign",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{BlockEntityTag:{Text2:'{\"text\":\" \",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"function battle:game/boss_set\"}}'}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
