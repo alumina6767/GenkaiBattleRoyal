@@ -31,3 +31,7 @@ scoreboard objectives add battle.team dummy
 
 ## 設定を表示するスコアボード
 scoreboard objectives add battle.setting dummy "設定"
+
+## 当たり判定を消すためだけのチーム
+team add no_collision
+team modify no_collision collisionRule never

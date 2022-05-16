@@ -3,6 +3,7 @@
         "battle:item/bits/throw/if",
         "battle:item/umeneri/if",
         "battle:item/gonkane/if",
-        "battle:item/gutitubo/if"
+        "battle:item/gutitubo/if",
+        "battle:item/champagne/if_lclicked"
     ]
 }

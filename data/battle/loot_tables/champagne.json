@@ -1,0 +1,57 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ender_eye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Battle:{\"ID\":\"champagne\",Shake:0},CustomModelData:670040}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "シャンパン",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "シャンパン",
+                  "color": "#f65bfe",
+                  "italic": false
+                },
+                "",
+                [
+                  {
+                    "keybind": "key.attack",
+                    "color": "#ff6c2d",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": ": ",
+                    "color": "#ff6c2d",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "シャンパンを振る",
+                    "color": "#fdbd1a",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "flags": {
+                "is_sneaking": true
+              },
+              "equipment": {
+                "mainhand": {
+                  "items": [
+                    "minecraft:ender_eye"
+                  ],
+                  "nbt": "{CustomModelData:670040}"
+                }
+              }
+            }
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:slime",
+              "nbt": "{Tags:[\"champagne\"]}",
+              "distance": {
+                "horizontal": {
+                  "max": 0.5
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "battle:item/champagne/shake"
+  }
+}
