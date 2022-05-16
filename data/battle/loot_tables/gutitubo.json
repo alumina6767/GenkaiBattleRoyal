@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{gutitubo:1b,CustomModelData:670011}"
+              "tag": "{gutitubo:1b,CustomModelData:670030}"
             },
             {
               "function": "minecraft:set_name",
