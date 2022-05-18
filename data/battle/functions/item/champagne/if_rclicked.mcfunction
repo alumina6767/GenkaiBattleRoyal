@@ -1,6 +1,7 @@
 #> battle:item/champagne/if_rclicked
-# if
+# 左クリックしたかチェック
 # @internal
 # @within right_click:**
 
-execute if score @s main_hand matches 670040 run function battle:item/champagne/then
+
+execute as @s[scores={main_hand=670040}] at @s run function battle:item/champagne/trigger

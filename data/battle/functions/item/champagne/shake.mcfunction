@@ -13,10 +13,13 @@ data remove storage tmp Shake
 execute store result storage tmp Shake int 1 run scoreboard players get _ _
 
 ## 振り数を更新
-item modify entity @s weapon.mainhand battle:shake
+execute unless score _ _ matches 5 run item modify entity @s weapon.mainhand battle:shake
 
 ## ストレージをリセット
 data remove storage tmp Shake
+
+## もし振り数が5なら シャンパンからシャンパンガトリングに変更する
+execute if score _ _ matches 5 run loot replace entity @s weapon.mainhand loot battle:champagne_gatling
 
 ## 叩いたスライムはしばらく無敵になってしまうので取替え
 scoreboard players operation _ _ = @s uuid3
