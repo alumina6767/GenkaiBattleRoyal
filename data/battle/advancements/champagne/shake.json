@@ -13,9 +13,6 @@
               },
               "equipment": {
                 "mainhand": {
-                  "items": [
-                    "minecraft:ender_eye"
-                  ],
                   "nbt": "{CustomModelData:670040}"
                 }
               }

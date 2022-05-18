@@ -5,16 +5,16 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:potion",
+          "name": "minecraft:warped_fungus_on_a_stick",
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Battle:{\"ID\":\"champagne\",Shake:0},CustomModelData:670040,CustomPotionEffects:[{Id:9b,Amplifier:2b,Duration:200},{Id:10b,Amplifier:5b,Duration:40}]}"
+              "tag": "{Battle:{\"ID\":\"champagne\",Shake:6},Damage:70,CustomModelData:670040}"
             },
             {
               "function": "minecraft:set_name",
               "name": {
-                "text": "シャンパン",
+                "text": "シャンパンガトリング",
                 "italic": false
               }
             },
@@ -22,12 +22,12 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "シャンパン",
+                  "text": "シャンパンガトリング",
                   "color": "#f65bfe",
                   "italic": false
                 },
                 "",
-                [
+                                [
                   {
                     "keybind": "key.use",
                     "color": "#ff6c2d",
@@ -35,13 +35,13 @@
                     "italic": false
                   },
                   {
-                    "text": "長押し: ",
+                    "text": ": ",
                     "color": "#ff6c2d",
                     "bold": false,
                     "italic": false
                   },
                   {
-                    "text": "シャンパンを飲む",
+                    "text": "ガトリングを発射する",
                     "color": "#fdbd1a",
                     "bold": false,
                     "italic": false

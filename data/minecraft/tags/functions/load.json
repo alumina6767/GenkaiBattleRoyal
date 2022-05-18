@@ -6,6 +6,7 @@
         "battle:item/compass/load",
         "battle:item/jump_pad_small_2/load",
         "battle:item/umeneri/load",
-        "battle:item/gutitubo/load"
+        "battle:item/gutitubo/load",
+        "battle:item/champagne/load"
     ]
 }
