@@ -3,11 +3,7 @@
 # @internal
 
 ## 発射
-execute as @a[tag=champagne.firing_high,scores={champagne.bullets=1..}] run function battle:item/champagne/shoot3/timer 
-
-## 弾丸が尽きたらリセット
-scoreboard players reset @a[tag=champagne.firing_high,scores={champagne.bullets=0}] champagne.power
-scoreboard players reset @a[tag=champagne.firing_high,scores={champagne.bullets=0}] champagne.bullets
+execute as @a[tag=champagne.firing_high] run function battle:item/champagne/shoot3/timer 
 
 ## ループ
 execute if entity @a[tag=champagne.firing_high,scores={champagne.bullets=1..},limit=1] run schedule function battle:item/champagne/shoot3/loop 1t append

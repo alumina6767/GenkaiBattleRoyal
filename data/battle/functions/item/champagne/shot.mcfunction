@@ -10,8 +10,8 @@
     #declare tag champagne.firing_high 強いシャンパンを発射している人
     #declare tag champagne.bullet.first 最初の処理に使う
 
-## 弾数
-scoreboard players set @s champagne.bullets 56
+## 弾数 発射ラグを生じさせるために少し多い
+scoreboard players set @s champagne.bullets 60
 
 ## 振り具合いを取得
 execute store result score _ _ run data get storage player_data tmp.SelectedItem.tag.Damage
