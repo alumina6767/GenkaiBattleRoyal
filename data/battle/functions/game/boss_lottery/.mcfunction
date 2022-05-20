@@ -20,43 +20,43 @@ execute if entity @a[tag=target,limit=1] run team add A "A"
 team join A @r[tag=battle.boss,tag=target]
 tag @a[team=A,tag=battle.boss] remove target
 execute as @a[team=A,tag=battle.boss] run tellraw @a [{"text":"チームAのボスは "},{"selector":"@s"}]
-scoreboard players set @a[team=A] battle.team 0
+scoreboard players set @a[team=A] battle.team 1
 
 execute if entity @a[tag=target,limit=1] run team add B "B"
 team join B @r[tag=battle.boss,tag=target]
 tag @a[team=B,tag=battle.boss] remove target
 execute as @a[team=B,tag=battle.boss] run tellraw @a [{"text":"チームBのボスは "},{"selector":"@s"}]
-scoreboard players set @a[team=B] battle.team 1
+scoreboard players set @a[team=B] battle.team 2
 
 execute if entity @a[tag=target,limit=1] run team add C "C"
 team join C @r[tag=battle.boss,tag=target]
 tag @a[team=C,tag=battle.boss] remove target
 execute as @a[team=C,tag=battle.boss] run tellraw @a [{"text":"チームCのボスは "},{"selector":"@s"}]
-scoreboard players set @a[team=C] battle.team 2
+scoreboard players set @a[team=C] battle.team 3
 
 execute if entity @a[tag=target,limit=1] run team add D "D"
 team join D @r[tag=battle.boss,tag=target]
 tag @a[team=D,tag=battle.boss] remove target
 execute as @a[team=D,tag=battle.boss] run tellraw @a [{"text":"チームDのボスは "},{"selector":"@s"}]
-scoreboard players set @a[team=D] battle.team 3
+scoreboard players set @a[team=D] battle.team 4
 
 execute if entity @a[tag=target,limit=1] run team add E "E"
 team join E @r[tag=battle.boss,tag=target]
 tag @a[team=E,tag=battle.boss] remove target
 execute as @a[team=E,tag=battle.boss] run tellraw @a [{"text":"チームEのボスは "},{"selector":"@s"}]
-scoreboard players set @a[team=E] battle.team 4
+scoreboard players set @a[team=E] battle.team 5
 
 execute if entity @a[tag=target,limit=1] run team add F "F"
 team join F @r[tag=battle.boss,tag=target]
 tag @a[team=F,tag=battle.boss] remove target
 execute as @a[team=F,tag=battle.boss] run tellraw @a [{"text":"チームFのボスは "},{"selector":"@s"}]
-scoreboard players set @a[team=F] battle.team 5
+scoreboard players set @a[team=F] battle.team 6
 
 execute if entity @a[tag=target,limit=1] run team add G "G"
 team join G @r[tag=battle.boss,tag=target]
 tag @a[team=G,tag=battle.boss] remove target
 execute as @a[team=G,tag=battle.boss] run tellraw @a [{"text":"チームGのボスは "},{"selector":"@s"}]
-scoreboard players set @a[team=G] battle.team 6
+scoreboard players set @a[team=G] battle.team 7
 
 ## タグを削除
 tag @a[tag=target] remove target
