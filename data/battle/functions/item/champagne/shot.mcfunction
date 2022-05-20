@@ -17,14 +17,17 @@ scoreboard players set @s champagne.bullets 56
 execute store result score _ _ run data get storage player_data tmp.SelectedItem.tag.Damage
 
 ## 弱
+execute if score _ _ matches 70 run playsound minecraft:entity.chicken.egg player @a ~ ~ ~ 1 0.5 0
 execute if score _ _ matches 70 run tag @s add champagne.firing_low
 execute if score _ _ matches 70 run schedule function battle:item/champagne/shoot1/loop 1t append
 
 ## 中
+execute if score _ _ matches 50 run playsound minecraft:entity.chicken.egg player @a ~ ~ ~ 1 0.5 0
 execute if score _ _ matches 50 run tag @s add champagne.firing_normal
 execute if score _ _ matches 50 run schedule function battle:item/champagne/shoot2/loop 1t append
 
 ## 強
+execute if score _ _ matches 1 run playsound minecraft:entity.chicken.egg player @a ~ ~ ~ 1 0.5 0
 execute if score _ _ matches 1 run tag @s add champagne.firing_high
 execute if score _ _ matches 1 run schedule function battle:item/champagne/shoot3/loop 1t append
 
