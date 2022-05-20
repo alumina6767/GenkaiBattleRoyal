@@ -22,10 +22,15 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "シャンパンガトリング",
+                  "text": "炭酸パワーを溜めたガトリング。",
                   "color": "#f65bfe",
                   "italic": false
                 },
+                {
+                  "text": "さらに振るとより強くなりそう。",
+                  "color": "#f65bfe",
+                  "italic": false
+                },                
                 "",
                 [
                   {
