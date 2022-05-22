@@ -1,0 +1,30 @@
+{
+  "condition": "minecraft:inverted",
+  "term": {
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:reference",
+        "name": "battle:invulnerable_gamemode"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "battle:same_uuid3"
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "type": "#battle:ignore"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Invulnerable:1b}"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "condition": "minecraft:value_check",
+  "value": {
+    "type": "minecraft:score",
+    "target": {
+      "type": "minecraft:fixed",
+      "name": "_"
+    },
+    "score": "battle.team"
+  },
+  "range": {
+    "min": {
+      "type": "minecraft:score",
+      "target": "this",
+      "score": "battle.team"
+    },
+    "max": {
+      "type": "minecraft:score",
+      "target": "this",
+      "score": "battle.team"
+    }
+  }
+}
