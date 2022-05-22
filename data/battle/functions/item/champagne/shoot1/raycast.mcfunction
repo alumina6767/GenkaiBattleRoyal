@@ -6,7 +6,7 @@
 execute as @s[tag=!champagne.bullet.first] run particle crit ~ ~ ~ 0 0 0 0 1 force
 
 ## 1回目の処理を終了
-execute if predicate battle:chance/0.5 run tag @s[tag=champagne.bullet.first] remove champagne.bullet.first
+execute if predicate battle:chance/0.1 run tag @s[tag=champagne.bullet.first] remove champagne.bullet.first
 
 ## 移動コストの消費
 scoreboard players remove .itt raycast 1
