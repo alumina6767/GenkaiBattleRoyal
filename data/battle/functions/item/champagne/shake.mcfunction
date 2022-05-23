@@ -40,6 +40,10 @@ execute if score _ _ matches 50 run particle dust 0.369 0.922 0.09 2 ~ ~1.0 ~ 1.
 execute if score _ _ matches 50 run playsound minecraft:block.anvil.destroy player @a ~ ~ ~ 1 2 0
 execute if score _ _ matches 50 run loot replace entity @s weapon.mainhand loot battle:champagne/gatling_high
 
+## 爆発するシャンパンガトリング
+execute if score _ _ matches 56 run playsound minecraft:block.anvil.destroy player @a ~ ~ ~ 1 2 0
+#execute if score _ _ matches 56 run loot replace entity @s weapon.mainhand loot battle:champagne/gatling_high
+
 ## 叩いたスライムはしばらく無敵になってしまうので取替え
 scoreboard players operation _ _ = @s uuid3
 execute anchored eyes positioned ^ ^ ^ as @e[type=slime,tag=champagne,distance=..5] if score @s uuid3 = _ _ run function battle:item/champagne/change_slime

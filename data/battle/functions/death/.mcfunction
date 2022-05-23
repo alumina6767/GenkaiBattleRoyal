@@ -23,7 +23,9 @@ scoreboard players operation _ battle.hurt_by = @s battle.hurt_by
 execute as @a if score @s uuid3 = _ battle.hurt_by run tag @s add target
 
 ## 死因によって場合分け
+### シャンパンガトリング
 execute if score @s battle.hurt_with matches 670040 run tellraw @a [{"selector":"@s"},{"text":"は","color": "gray"},{"selector":"@a[tag=target]"},{"text":"のシャンパンガトリングでハチの巣にされた","color": "gray"}]
+execute if score @s battle.hurt_with matches 670044 run tellraw @a [{"selector":"@s"},{"text":"は","color": "gray"},{"selector":"@a[tag=target]"},{"text":"の暴発に巻き込まれた","color": "gray"}]
 
 ## タグの消去
 tag @a[tag=target] remove target
@@ -33,3 +35,6 @@ scoreboard players reset @s battle.hurt_by
 scoreboard players reset @s battle.hurt_with
 
 #endregion
+
+## 進捗リセット
+advancement revoke @s only battle:died
