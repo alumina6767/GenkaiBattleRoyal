@@ -18,5 +18,9 @@ execute if score is_same_team _ matches 0 run data modify storage score_damage: 
 ### 対象を実行者にしてfunctionを実行
 execute if score is_same_team _ matches 0 run function score_damage:api/attack
 
+## ダメージソース情報を保存
+execute if score is_same_team _ matches 0 run scoreboard players operation @s battle.hurt_by = _ uuid3
+execute if score is_same_team _ matches 0 run scoreboard players set @s battle.hurt_with 670040
+
 ## スコアの削除
 scoreboard players reset is_same_team _

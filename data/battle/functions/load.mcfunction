@@ -35,3 +35,7 @@ scoreboard objectives add battle.setting dummy "設定"
 ## 当たり判定を消すためだけのチーム
 team add no_collision
 team modify no_collision collisionRule never
+
+## ダメージソースの情報を保存
+scoreboard objectives add battle.hurt_by dummy
+scoreboard objectives add battle.hurt_with dummy

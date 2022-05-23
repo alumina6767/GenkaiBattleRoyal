@@ -5,7 +5,7 @@
 scoreboard players add clock battle 1
 scoreboard players operation clock battle %= interval battle
 
-# 死亡したプレイヤーを監視
+## 死亡したプレイヤーを監視
 #execute as @a[scores={battle.death=1..}] run function battle:death/
 
 #execute as @a[scores={battle.health=..0}] run effect give @s instant_health 4 100 false
