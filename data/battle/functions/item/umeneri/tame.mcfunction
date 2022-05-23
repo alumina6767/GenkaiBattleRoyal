@@ -10,20 +10,15 @@
 tag @e[type=silverfish,tag=tarako,tag=!tamed,sort=nearest,limit=1] add target
 
 ## てなづけられているタグを追加
-tag @e[type=silverfish,tag=tarako,tag=target] add tamed
+tag @e[type=silverfish,tag=target] add tamed
 
 ## メッセージ
-execute if entity @e[type=silverfish,tag=tamed] run function battle:title_reset
-execute if entity @e[type=silverfish,tag=tamed] run title @s subtitle "たらこを召喚した!!"
+function battle:title_reset
+title @s subtitle "たらこを召喚した!!"
 
 ## チームに入れる
-execute if entity @s[team=A] positioned ^ ^ ^1 run team join A @e[type=silverfish,tag=target]
-execute if entity @s[team=B] positioned ^ ^ ^1 run team join B @e[type=silverfish,tag=target]
-execute if entity @s[team=C] positioned ^ ^ ^1 run team join C @e[type=silverfish,tag=target]
-execute if entity @s[team=D] positioned ^ ^ ^1 run team join D @e[type=silverfish,tag=target]
-execute if entity @s[team=E] positioned ^ ^ ^1 run team join E @e[type=silverfish,tag=target]
-execute if entity @s[team=F] positioned ^ ^ ^1 run team join F @e[type=silverfish,tag=target]
-execute if entity @s[team=G] positioned ^ ^ ^1 run team join G @e[type=silverfish,tag=target]
+scoreboard players operation @e[type=silverfish,tag=target] battle.team = @s battle.team
+execute as @e[type=silverfish,tag=target] run function battle:id2team
 
 ## スコアを付与
 scoreboard players set @e[type=silverfish,tag=tarako,tag=target] battle -1

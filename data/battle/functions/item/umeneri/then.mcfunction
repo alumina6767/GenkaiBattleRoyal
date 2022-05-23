@@ -15,13 +15,9 @@
 tag @s add target
 
 ## 同じチームの近くのたらこにタグ付け
-execute if entity @s[team=A] positioned ^ ^ ^1.0 run tag @e[type=silverfish,tag=tarako,distance=..5,sort=nearest,limit=1,team=A] add target
-execute if entity @s[team=B] positioned ^ ^ ^1.0 run tag @e[type=silverfish,tag=tarako,distance=..5,sort=nearest,limit=1,team=B] add target
-execute if entity @s[team=C] positioned ^ ^ ^1.0 run tag @e[type=silverfish,tag=tarako,distance=..5,sort=nearest,limit=1,team=C] add target
-execute if entity @s[team=D] positioned ^ ^ ^1.0 run tag @e[type=silverfish,tag=tarako,distance=..5,sort=nearest,limit=1,team=D] add target
-execute if entity @s[team=E] positioned ^ ^ ^1.0 run tag @e[type=silverfish,tag=tarako,distance=..5,sort=nearest,limit=1,team=E] add target
-execute if entity @s[team=F] positioned ^ ^ ^1.0 run tag @e[type=silverfish,tag=tarako,distance=..5,sort=nearest,limit=1,team=F] add target
-execute if entity @s[team=G] positioned ^ ^ ^1.0 run tag @e[type=silverfish,tag=tarako,distance=..5,sort=nearest,limit=1,team=G] add target
+scoreboard players operation _ battle.team = @s battle.team
+execute positioned ^ ^ ^1.0 run tag @e[type=silverfish,tag=tarako,distance=..5,sort=nearest,predicate=battle:same_team,limit=1] add target
+scoreboard players reset _ battle.team
 
 ## たらこが近くにいなかったとき
 execute unless entity @e[type=silverfish,tag=target] run function battle:item/umeneri/far
