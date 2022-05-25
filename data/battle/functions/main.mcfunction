@@ -18,8 +18,8 @@ scoreboard players operation clock battle %= interval battle
 function battle:effect/jump_small_2/tick
 
 ## ボスを見ている時 弱体化エフェクト 極まれにジャンプ切りするとダメージが入る
-execute as @a[tag=looking_at_boss,predicate=!battle:looking_at_boss] run function battle:effect/weak/clear
-execute as @a[tag=!battle.boss,predicate=battle:looking_at_boss] run function battle:effect/weak/
+execute as @a[tag=looking_at_boss,predicate=!battle:looking_at/boss] run function battle:effect/weak/clear
+execute as @a[tag=!battle.boss,predicate=battle:looking_at/boss] run function battle:effect/weak/
 #execute as @a[tag=battle.boss] at @s run function battle:effect/weak_area
 
 ## ボスの近くに矢が来た時 弾く
