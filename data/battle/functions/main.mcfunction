@@ -27,6 +27,9 @@ execute as @a[tag=battle.boss] at @s run function battle:effect/barrier/
 
 function battle:effect/barrier/tick
 
+## ボスバーの更新
+function battle:game/bossbar/tick
+
 ## コンパスの更新
 execute if score clock battle matches 0 run function battle:item/compass/tick
 
