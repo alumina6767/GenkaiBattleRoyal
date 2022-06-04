@@ -1,6 +1,5 @@
 {
     "values": [
-        "battle:item/jump_pad_small_2/if",
         "battle:item/compass/check_slot",
         "battle:item/bits/if"
     ]

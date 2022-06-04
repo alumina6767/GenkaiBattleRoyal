@@ -5,11 +5,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:firework_star",
+          "name": "minecraft:ender_eye",
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:127,JumpPad:1b,Explosion:{Colors:[I;849230]}}"
+              "tag": "{JumpPad:1b,CustomModelData:670050}"
             },
             {
               "function": "minecraft:set_name",
@@ -29,7 +29,7 @@
                 "",
                 [
                   {
-                    "keybind": "key.swapOffhand",
+                    "keybind": "key.use",
                     "color": "#ff6c2d",
                     "bold": true,
                     "italic": false

@@ -2,9 +2,6 @@
 # ジャンプパッド
 # @internal
 
-## メインハンドとオフハンドをスワップ
-function share:swap_main_off
-
 ## 数を減らす
 function share:remove_mainhand
 
