@@ -5,6 +5,7 @@
 #>
 # @internal
     #declare tag battle.boss ボスのみにつけるタグ
+    #declare tag battle.invulnerable ダメージ処理を行わないエンティティ
     #declare score_holder clock
     #declare score_holder interval
     #declare score_holder compass.slot
