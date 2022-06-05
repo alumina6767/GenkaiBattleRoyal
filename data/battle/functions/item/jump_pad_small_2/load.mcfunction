@@ -4,3 +4,6 @@
 
 ## ジャンプパッドのパーティクルを一定時間与える
 scoreboard objectives add battle.jump_pad.par dummy
+
+## アイテム使用のインターバル
+scoreboard objectives add interval.jump_pad dummy
