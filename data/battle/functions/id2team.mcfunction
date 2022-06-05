@@ -2,6 +2,7 @@
 # teamIDを基にteamに参加させる
 # @internal
 
+team leave @s[scores={battle.team=0}]
 team join A @s[scores={battle.team=1}]
 team join B @s[scores={battle.team=2}]
 team join C @s[scores={battle.team=3}]
