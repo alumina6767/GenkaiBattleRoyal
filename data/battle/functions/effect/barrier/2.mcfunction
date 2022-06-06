@@ -7,8 +7,9 @@
 # @private
     #declare tag owner
 
-## 矢のUUIDを保存
-execute store result score _ _ run data get entity @s Owner[3]
+## uuid3が登録されていない場合はOwnerから取得
+execute unless entity @s[scores={uuid3=-2147483648..2147483647}] store result score _ _ run data get entity @s Owner[3]
+scoreboard players operation _ _ = @s[scores={uuid3=-2147483648..2147483647}] uuid3
 
 ## 発射主を取得
 execute as @a if score @s uuid3 = _ _ run tag @s add owner

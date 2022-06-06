@@ -1,0 +1,20 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "#minecraft:arrows",
+        "nbt": "{inGround:0b}"
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{Tags:[\"barrier.blockable\"]}"
+      }
+    }
+  ]
+}
