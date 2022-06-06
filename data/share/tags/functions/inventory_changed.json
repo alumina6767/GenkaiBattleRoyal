@@ -1,6 +1,7 @@
 {
     "values": [
         "battle:item/compass/check_slot",
-        "battle:item/bits/if"
+        "battle:item/bits/if",
+        "battle:item/pyoniper/if"
     ]
 }

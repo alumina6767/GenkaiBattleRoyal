@@ -8,6 +8,7 @@
         "battle:item/umeneri/load",
         "battle:item/gutitubo/load",
         "battle:item/champagne/load",
-        "battle:game/bossbar/load"
+        "battle:game/bossbar/load",
+        "battle:item/pyoniper/load"
     ]
 }
