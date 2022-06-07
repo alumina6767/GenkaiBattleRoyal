@@ -2,6 +2,7 @@
     "values": [
         "battle:item/compass/check_slot",
         "battle:item/bits/if",
-        "battle:item/pyoniper/if"
+        "battle:item/pyoniper/if",
+        "battle:item/pyoniper2/swap_offhand"
     ]
 }

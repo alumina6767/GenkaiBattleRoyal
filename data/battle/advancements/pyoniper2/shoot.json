@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:shot_crossbow",
+      "conditions": {
+        "item": {
+          "nbt": "{CustomModelData:670080}"
+        }
+      }
+    }
+  },
+  "rewards": {
+      "function": "battle:item/pyoniper2/shoot"
+  }
+}
