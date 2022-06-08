@@ -44,5 +44,5 @@ execute if score _ _ matches 6 run loot replace entity @s hotbar.6 loot battle:p
 execute if score _ _ matches 7 run loot replace entity @s hotbar.7 loot battle:pyoniper/pyoniper
 execute if score _ _ matches 8 run loot replace entity @s hotbar.8 loot battle:pyoniper/pyoniper
 
-## 音
-playsound entity.arrow.hit_player master @s ~ ~ ~
+## リロード完了音
+playsound item.crossbow.loading_end player @s ~ ~ ~ 2 0.5 0

@@ -3,10 +3,9 @@
 # @internal
 
 ## パーティクル
-particle crit ~ ~ ~ 0.01 0.01 0.01 0 2 force
-
-## 1回目の処理を終了
-#execute if predicate battle:chance/0.1 run tag @s[tag=champagne.bullet.first] remove champagne.bullet.first
+particle dust 1 0.769 0.984 1.5 ~ ~ ~ 0.01 0.01 0.01 0 1 force
+particle dust 0.953 0.878 0.953 1 ~ ~ ~ 0.02 0.02 0.02 0 1 force
+execute if predicate battle:chance/0.2 run particle end_rod ~ ~ ~ 0.0 0.0 0.0 0.2 1 force
 
 ## 移動コストの消費
 scoreboard players remove .itt raycast 1

@@ -7,7 +7,8 @@
     #declare tag pyoniper2.bullet pyoniper2の弾丸
 
 ## 音
-playsound entity.arrow.shoot player @a ~ ~ ~ 1.0 1.0 0.0
+playsound minecraft:block.respawn_anchor.deplete player @a ~ ~ ~ 1 1.5 0
+playsound minecraft:block.respawn_anchor.deplete player @a ~ ~ ~ 1 0.8 0
 
 #region 弾丸
 ## 弾を召喚

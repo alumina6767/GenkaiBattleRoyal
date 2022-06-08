@@ -10,8 +10,9 @@
 ## オフハンドとスワップする
 function share:swap_main_off
 
-## 音
-playsound entity.egg.throw player @a ~ ~ ~ 1.0 1.0 0.0
+## 発射音
+playsound minecraft:block.respawn_anchor.deplete player @a ~ ~ ~ 1 1.5 0
+playsound minecraft:block.respawn_anchor.deplete player @a ~ ~ ~ 1 0.8 0
 
 ## 弾を召喚
 summon armor_stand ~ ~ ~ {Tags:["new","pyoniper.bullet","barrier.blockable"],Small:1b,Marker:1b,Invisible:1b,Silent:1b}

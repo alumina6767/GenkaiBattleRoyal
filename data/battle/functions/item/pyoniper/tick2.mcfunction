@@ -2,6 +2,9 @@
 # tick2
 # @internal
 
+## 弾道音
+execute if predicate battle:chance/0.5 run playsound minecraft:block.respawn_anchor.deplete neutral @a ~ ~ ~ 0.5 1.0 0
+
 ## チームIDを取得
 scoreboard players operation _ battle.team = @s battle.team
 
@@ -27,4 +30,5 @@ execute if score .itt raycast matches 1 run tp ^ ^ ^5.0
 scoreboard players remove @s pyoniper.time 1
 
 ## 残存時間が0なら消す
+execute if entity @s[scores={pyoniper2.time=..0}] run playsound entity.iron_golem.hurt neutral @a ~ ~ ~ 1 1
 kill @s[scores={pyoniper.time=..0}]
