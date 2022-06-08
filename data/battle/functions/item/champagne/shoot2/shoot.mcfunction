@@ -7,7 +7,7 @@
     #declare tag champagne.bullet_normal
 
 ## 音
-playsound entity.egg.throw player @a ~ ~ ~ 1.0 1.0 0.0
+playsound entity.egg.throw player @a ~ ~ ~ 2.0 1.0 0.0
 
 ## 弾を召喚
 summon armor_stand ~ ~ ~ {Tags:["champagne.bullet_normal","new","champagne.bullet.first","barrier.blockable"],Small:1b,Marker:1b,Invisible:1b,Silent:1b}
