@@ -8,8 +8,11 @@
 # @private
     #declare tag target
 
+## ボスのチームを所得
+scoreboard players operation _ battle.team = @s battle.team
+
 ## 防げるエンティティにタグ付け
-execute positioned ~ ~1 ~ run tag @e[predicate=battle:barrier/blockable,distance=..3.5] add target
+execute positioned ~ ~1 ~ run tag @e[predicate=battle:barrier/blockable,predicate=!battle:same_team,distance=..3.5] add target
 
 ## シールドを移動
 execute if entity @s[team=A] as @e[predicate=battle:barrier/blockable,tag=target,limit=1] facing entity @s eyes positioned as @s positioned ~ ~-1.3 ~ run tp 00000006-0000-0007-0000-000100000001 ^0.5 ^ ^ ~ ~
