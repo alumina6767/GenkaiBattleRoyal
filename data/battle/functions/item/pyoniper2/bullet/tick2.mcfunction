@@ -1,4 +1,4 @@
-#> battle:item/pyoniper2/tick_bullet2
+#> battle:item/pyoniper2/bullet/tick2
 # 弾丸処理 as 弾丸
 # @internal
 
@@ -15,13 +15,13 @@ scoreboard players operation _ uuid3 = @s uuid3
 scoreboard players set .itt raycast 21
 
 ## 衝突の探索
-function battle:item/pyoniper2/raycast
+function battle:item/pyoniper2/bullet/raycast
 
 ## 壁に当たった時
 execute if score .itt raycast matches 0 run scoreboard players set @s pyoniper2.time 0
 
 ## エンティティに当たった時
-execute if score .itt raycast matches -1 run function battle:item/pyoniper2/hit_entity
+execute if score .itt raycast matches -1 run function battle:item/pyoniper2/bullet/hit_entity
 
 ## 壁もエンティティもなかった時
 execute if score .itt raycast matches 1 run tp ^ ^ ^5.0

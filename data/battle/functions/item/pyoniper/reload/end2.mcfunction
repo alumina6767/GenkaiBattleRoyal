@@ -1,12 +1,11 @@
-#> battle:item/pyoniper/reload_end
-# リロードの終了
+#> battle:item/pyoniper/reload/end2
+# すべてのスロットのアイテムを置換
 # @internal
 
-## スコアのリセット
-scoreboard players reset @s pyoniper.reload
+## スロット番号の取り出し
+execute store result score _ _ run data get storage tmp target_slots[-1] 1
 
 ## アイテムの置き換え
-execute store result score _ _ run data get entity @s Inventory.[{tag:{CustomModelData:670070}}].Slot 1
 execute if score _ _ matches 9 run loot replace entity @s inventory.0 loot battle:pyoniper/pyoniper
 execute if score _ _ matches 10 run loot replace entity @s inventory.1 loot battle:pyoniper/pyoniper
 execute if score _ _ matches 11 run loot replace entity @s inventory.2 loot battle:pyoniper/pyoniper
@@ -44,5 +43,8 @@ execute if score _ _ matches 6 run loot replace entity @s hotbar.6 loot battle:p
 execute if score _ _ matches 7 run loot replace entity @s hotbar.7 loot battle:pyoniper/pyoniper
 execute if score _ _ matches 8 run loot replace entity @s hotbar.8 loot battle:pyoniper/pyoniper
 
-## リロード完了音
-playsound item.crossbow.loading_end player @s ~ ~ ~ 2 0.5 0
+## 処理したスロット番号の削除
+data remove storage tmp target_slots[-1]
+
+## ループ
+execute if data storage tmp target_slots[-1] run function battle:item/pyoniper/reload/end2

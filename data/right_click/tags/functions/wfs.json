@@ -1,5 +1,6 @@
 {
     "values": [
-        "battle:item/champagne/if_rclicked"
+        "battle:item/champagne/if_rclicked",
+        "battle:item/pyoniper2/triger/unreloaded"
     ]
 }

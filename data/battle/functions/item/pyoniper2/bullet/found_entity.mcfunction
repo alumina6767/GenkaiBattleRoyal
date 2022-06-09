@@ -1,4 +1,4 @@
-#> battle:item/pyoniper/found_entity
+#> battle:item/pyoniper2/bullet/found_entity
 # エンティティが見つかったとき
 # @internal
 
@@ -20,7 +20,7 @@ execute if score is_same_team _ matches 0 run function score_damage:api/attack
 
 ## ダメージソース情報を保存
 execute if score is_same_team _ matches 0 run scoreboard players operation @s battle.hurt_by = _ uuid3
-execute if score is_same_team _ matches 0 run scoreboard players set @s battle.hurt_with 670060
+execute if score is_same_team _ matches 0 run scoreboard players set @s battle.hurt_with 670080
 
 ## スコアの削除
 scoreboard players reset is_same_team _

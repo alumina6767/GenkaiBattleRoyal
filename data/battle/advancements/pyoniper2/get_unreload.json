@@ -1,0 +1,30 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": "this",
+              "score": "pyoniper2.reload"
+            },
+            "range": {
+              "max": 0
+            }
+          }
+        ],
+        "items": [
+          {
+            "nbt": "{CustomModelData:670090}"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+      "function": "battle:item/pyoniper2/get_unreload"
+  }
+}

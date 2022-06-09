@@ -1,4 +1,4 @@
-#> battle:item/pyoniper/raycast
+#> battle:item/pyoniper/bullet/raycast
 # 弾道処理
 # @internal
 
@@ -18,7 +18,7 @@ execute if block ~ ~ ~ #raycast:partial run function raycast:partial
 execute unless block ~ ~ ~ #raycast:air run scoreboard players set .itt raycast 0
 
 ## エンティティの探索
-execute positioned ~-0.25 ~-0.25 ~-0.25 as @e[dx=0] positioned ~-0.5 ~-0.5 ~-0.5 if entity @s[predicate=battle:can_take_damage,dx=0] run function battle:item/pyoniper/found_entity
+execute positioned ~-0.25 ~-0.25 ~-0.25 as @e[dx=0] positioned ~-0.5 ~-0.5 ~-0.5 if entity @s[predicate=battle:can_take_damage,dx=0] run function battle:item/pyoniper/bullet/found_entity
 
 ## 前進して探索を継続
-execute if score .itt raycast matches 2.. positioned ^ ^ ^0.25 run function battle:item/pyoniper/raycast
+execute if score .itt raycast matches 2.. positioned ^ ^ ^0.25 run function battle:item/pyoniper/bullet/raycast

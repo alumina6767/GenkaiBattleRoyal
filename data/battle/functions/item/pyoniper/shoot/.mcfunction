@@ -1,10 +1,9 @@
-#> battle:item/pyoniper/shoot
+#> battle:item/pyoniper/shoot/
 # 発砲する
 # @internal
 
 #>
 # @internal
-    #declare tag pyoniper.reloading
     #declare tag pyoniper.bullet
 
 ## オフハンドとスワップする
@@ -38,11 +37,8 @@ scoreboard players set @s pyoniper.reload 100
 ## アイテムの置き換え
 loot replace entity @s weapon loot battle:pyoniper/reloading
 
-## プレイヤーにリロード中タグをつける
-#tag @s add pyoniper.reloading
-
 ## リロード処理
-schedule function battle:item/pyoniper/reload_tick 1t append
+schedule function battle:item/pyoniper/reload/tick 1t append
 
 ## 弾道処理
-schedule function battle:item/pyoniper/tick 1t append
+schedule function battle:item/pyoniper/bullet/tick 1t append
