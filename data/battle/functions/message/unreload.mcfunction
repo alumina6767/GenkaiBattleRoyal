@@ -3,7 +3,7 @@
 # @internal
 
 ## サブタイトルに表示
-function battle:title_reset
+function battle:message/title_reset
 title @s subtitle "リロード中"
 
 ## 音

@@ -13,7 +13,7 @@ tag @e[type=silverfish,tag=tarako,tag=!tamed,sort=nearest,limit=1] add target
 tag @e[type=silverfish,tag=target] add tamed
 
 ## メッセージ
-function battle:title_reset
+function battle:message/title_reset
 title @s subtitle "たらこを召喚した!!"
 
 ## チームに入れる

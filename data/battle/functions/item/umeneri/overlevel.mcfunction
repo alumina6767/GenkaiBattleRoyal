@@ -3,7 +3,7 @@
 # @internal
 
 ## メッセージ
-execute as @a[tag=target] run function battle:title_reset
+execute as @a[tag=target] run function battle:message/title_reset
 title @a[tag=target] subtitle "これ以上このたらこは強くなれない！！"
 
 ## アイテムを消費しないようにタグを消去

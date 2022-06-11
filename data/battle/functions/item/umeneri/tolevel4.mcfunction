@@ -2,7 +2,7 @@
 # level4 にレベルアップ
 # @internal
 
-execute as @a[tag=target] run function battle:title_reset
+execute as @a[tag=target] run function battle:message/title_reset
 title @a[tag=target] subtitle "たらこが最終レベルに進化した!!"
 
 ## パーティクル

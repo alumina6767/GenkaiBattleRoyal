@@ -3,7 +3,7 @@
 # @internal
 
 ## メッセージ
-execute as @a[tag=target] run function battle:title_reset
+execute as @a[tag=target] run function battle:message/title_reset
 title @a[tag=target] subtitle "たらこがレベル3に進化した!!"
 
 ## パーティクル
