@@ -52,7 +52,7 @@
               },
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{glow_bow:1b,ammo:5,max:1b}"
+                "tag": "{glow_bow:1b,ammo:5,max:1b,CustomModelData:670100}"
               }
             ]
           }
