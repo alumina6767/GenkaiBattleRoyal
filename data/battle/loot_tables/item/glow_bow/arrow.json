@@ -1,0 +1,20 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:arrow",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{glow_bow_arrow:1b}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

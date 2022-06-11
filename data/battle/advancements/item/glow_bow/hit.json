@@ -1,0 +1,22 @@
+{
+    "criteria": {
+      "adv": {
+        "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "player": {},
+          "damage": {
+            "type": {
+              "direct_entity": {
+                "type": "#minecraft:arrows",
+                "nbt": "{Tags:[\"Item.glowbow.arrow\"]}"
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "battle:item/glow_bow/hit"
+    }
+  }
+  

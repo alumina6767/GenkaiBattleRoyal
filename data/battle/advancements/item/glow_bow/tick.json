@@ -1,0 +1,23 @@
+{
+    "criteria": {
+      "tick": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:player",
+                "nbt": "{Inventory:[{id:\"minecraft:bow\",tag:{glow_bow:1b}}]}"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "battle:item/glow_bow/having"
+    }
+  }
+  

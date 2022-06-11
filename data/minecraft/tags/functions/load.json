@@ -11,6 +11,7 @@
         "battle:game/bossbar/load",
         "battle:item/pyoniper/load",
         "battle:item/pyoniper2/load",
-        "battle:item/climbing_boots/load"
+        "battle:item/climbing_boots/load",
+        "battle:item/glow_bow/load"
     ]
 }
