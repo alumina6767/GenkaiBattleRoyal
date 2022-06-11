@@ -47,4 +47,4 @@ execute if score clock battle matches 0 run schedule function battle:item/umener
 execute as @e[type=#impact_projectiles] unless entity @s[scores={uuid3=-2147483648..2147483647}] at @s run scoreboard players operation @s uuid3 = @p uuid3
 
 ## teamの指定されていない飛び道具にteamを指定する
-execute as @e[type=#impact_projectiles] unless entity @s[scores={battle.team=-2147483648..2147483647}] at @s run scoreboard players operation @s battle.team = @p battle.team
+execute as @e[type=#impact_projectiles] unless entity @s[scores={battle.team=1..100}] at @s run scoreboard players operation @s battle.team = @p battle.team
