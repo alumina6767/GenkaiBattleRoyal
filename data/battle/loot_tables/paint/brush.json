@@ -23,7 +23,12 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "ある無名の画家の手垢が染み込んだ筆。描いた絵は見る者の心を激しく揺さぶる。",
+                  "text": "ある無名の画家の手垢が染み込んだ筆。",
+                  "color": "#f65bfe",
+                  "italic": false
+                },
+                {
+                  "text": "描いた絵は見る者の心を激しく揺さぶる。",
                   "color": "#f65bfe",
                   "italic": false
                 },
