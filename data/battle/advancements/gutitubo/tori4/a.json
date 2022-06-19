@@ -19,7 +19,7 @@
             "value": {
               "type": "minecraft:score",
               "target": "this",
-              "score": "cool_down.tori_damage"
+              "score": "tori.damage_cd"
             },
             "range": 0
           }

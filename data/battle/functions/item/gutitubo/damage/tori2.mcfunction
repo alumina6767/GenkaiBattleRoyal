@@ -9,7 +9,7 @@ effect give @s instant_damage 1 0 true
 summon arrow ~ ~2.1 ~ {Fire:800,damage:0.1d,Motion:[0.0,-6.0,0.0]}
 
 ## ダメージのクールダウン
-scoreboard players set @s cool_down.tori_damage 20
+scoreboard players set @s tori.damage_cd 20
 
 ## クールダウンの減少
 schedule function battle:item/gutitubo/damage/cool_down 1t append

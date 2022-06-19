@@ -7,7 +7,7 @@
 effect give @s instant_damage 1 1 true
 
 ## ダメージのクールダウン
-scoreboard players set @s cool_down.tori_damage 20
+scoreboard players set @s tori.damage_cd 20
 
 ## クールダウンの減少
 schedule function battle:item/gutitubo/damage/cool_down 1t append

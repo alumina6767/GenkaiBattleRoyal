@@ -3,7 +3,7 @@
 # @internal
 
 ## toriのダメージを連続で食らうのを防ぐ
-scoreboard objectives add cool_down.tori_damage dummy
+scoreboard objectives add tori.damage_cd dummy
 
 ## アイテム使用のクールダウン
 scoreboard objectives add tori.use_cd dummy
