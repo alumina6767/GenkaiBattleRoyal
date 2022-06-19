@@ -26,6 +26,10 @@ execute as @e[type=armor_stand,tag=new] at @s run function battle:item/gutitubo/
 ## アイテムを消費
 function share:remove_mainhand
 
+## アイテム使用のクールダウンの設定
+scoreboard players set @s tori.use_cd 4
+schedule function battle:item/gutitubo/tick/use_cd 1t append
+
 ## スコアボードを削除
 scoreboard players reset _ battle.team
 
