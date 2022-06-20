@@ -42,6 +42,9 @@ execute if score @s battle.hurt_with matches 670080 run tellraw @a [{"selector":
 ### 未だ無名の筆
 execute if score @s battle.hurt_with matches 670110 run tellraw @a [{"selector":"@s"},{"text":"は","color": "gray"},{"selector":"@a[tag=target]"},{"text":"の無名の筆に感銘を受けすぎた","color": "gray"}]
 
+### 黒酢つぶつぶ２
+execute if score @s battle.hurt_with matches 670130 run tellraw @a [{"selector":"@s"},{"text":"は","color": "gray"},{"selector":"@a[tag=target]"},{"text":"の黒酢つぶつぶ２にぶちぶちにされた","color": "gray"}]
+
 ## タグの消去
 tag @a[tag=target] remove target
 

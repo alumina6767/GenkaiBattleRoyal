@@ -12,6 +12,7 @@ scoreboard players reset z _
 
 ## 見ている方角の設定
 data modify entity @s Rotation set from entity @a[tag=hummer2.target,limit=1] Rotation
+data merge entity @s {Air:-1}
 
 ## 召喚主の設定
 scoreboard players operation @s uuid3 = _ uuid3

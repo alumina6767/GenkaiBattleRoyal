@@ -15,3 +15,7 @@ execute as @e[type=armor_stand,tag=hummer2] if score @s uuid3 = _ uuid3 run kill
 ## スコアのリセット
 scoreboard players reset _ uuid3
 scoreboard players reset @s hummer2.dash
+
+## 使用クールダウンの設定
+scoreboard players set @s hummer2.use_cd 100
+schedule function battle:item/hummer2/use_cd 1t append
