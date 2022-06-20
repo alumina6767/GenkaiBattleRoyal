@@ -14,6 +14,7 @@
         "battle:item/climbing_boots/load",
         "battle:item/glow_bow/load",
         "battle:item/paint/load",
-        "battle:item/hummer/load"
+        "battle:item/hummer/load",
+        "battle:item/hummer2/load"
     ]
 }
