@@ -1,0 +1,77 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:670120}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "黒酢つぶつぶ",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "持つ者に健康的なパワーを授けるハンマー。",
+                  "color": "#f65bfe",
+                  "italic": false
+                },
+                "",
+                [
+                  {
+                    "keybind": "key.use",
+                    "color": "#ff6c2d",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": ": ",
+                    "color": "#ff6c2d",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "突進攻撃",
+                    "color": "#fdbd1a",
+                    "bold": false,
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "keybind": "手に持つ",
+                    "color": "#ff6c2d",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": ": ",
+                    "color": "#ff6c2d",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "ジャンプ力上昇",
+                    "color": "#fdbd1a",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
