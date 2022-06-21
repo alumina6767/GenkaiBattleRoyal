@@ -23,10 +23,10 @@ gamemode spectator @s
 # execute if entity @s[y_rotation=-136..-45] run summon armor_stand ~ ~ ~ {Tags:["hummer2.dummy","new"],Silent:1b,Rotation:[270f,0f]}
 
 ## 乗り移る人形
-execute if entity @s[y_rotation=-44..45] run summon armor_stand ~ ~ ~ {Invisible:1b,Silent:1b,Tags:["hummer2","hummer2.dummy","new"],Passengers:[{id:"minecraft:armor_stand",Invisible:1b,Small:1b,Marker:1b,Tags:["hummer2","hummer2.body","new"]}]}
-execute if entity @s[y_rotation=46..135] run summon armor_stand ~ ~ ~ {Invisible:1b,Silent:1b,Tags:["hummer2","hummer2.dummy","new"],Passengers:[{id:"minecraft:armor_stand",Invisible:1b,Small:1b,Marker:1b,Tags:["hummer2","hummer2.body","new"]}]}
-execute unless entity @s[y_rotation=-136..135] run summon armor_stand ~ ~ ~ {Invisible:1b,Silent:1b,Tags:["hummer2","hummer2.dummy","new"],Passengers:[{id:"minecraft:armor_stand",Invisible:1b,Small:1b,Marker:1b,Tags:["hummer2","hummer2.body","new"]}]}
-execute if entity @s[y_rotation=-136..-45] run summon armor_stand ~ ~ ~ {Invisible:1b,Silent:1b,Tags:["hummer2","hummer2.dummy","new"],Passengers:[{id:"minecraft:armor_stand",Invisible:1b,Small:1b,Marker:1b,Tags:["hummer2","hummer2.body","new"]}]}
+execute if entity @s[y_rotation=-44..45] run summon armor_stand ~ ~ ~ {Invisible:1b,Silent:1b,Tags:["hummer2","hummer2.dummy","new"],Passengers:[{id:"area_effect_cloud",Duration:61,Tags:["hummer2","hummer2.body","new"]}]}
+execute if entity @s[y_rotation=46..135] run summon armor_stand ~ ~ ~ {Invisible:1b,Silent:1b,Tags:["hummer2","hummer2.dummy","new"],Passengers:[{id:"area_effect_cloud",Duration:61,Tags:["hummer2","hummer2.body","new"]}]}
+execute unless entity @s[y_rotation=-136..135] run summon armor_stand ~ ~ ~ {Invisible:1b,Silent:1b,Tags:["hummer2","hummer2.dummy","new"],Passengers:[{id:"area_effect_cloud",Duration:61,Tags:["hummer2","hummer2.body","new"]}]}
+execute if entity @s[y_rotation=-136..-45] run summon armor_stand ~ ~ ~ {Invisible:1b,Silent:1b,Tags:["hummer2","hummer2.dummy","new"],Passengers:[{id:"area_effect_cloud",Duration:61,Tags:["hummer2","hummer2.body","new"]}]}
 
 ## 向きの指定
 #data modify entity @e[type=armor_stand,tag=new,tag=hummer2.body,limit=1] Rotation set from entity @s Rotation
@@ -40,7 +40,7 @@ scoreboard players operation _ uuid3 = @s uuid3
 
 ## 人形として実行
 execute as @e[type=armor_stand,tag=new,tag=hummer2.dummy] run function battle:item/hummer2/use2
-execute as @e[type=armor_stand,tag=new,tag=hummer2.body] run function battle:item/hummer2/use3
+execute as @e[type=area_effect_cloud,tag=new,tag=hummer2.body] run function battle:item/hummer2/use3
 
 ## ダッシュ時間の設定
 scoreboard players set @s hummer2.dash 60
@@ -51,6 +51,7 @@ schedule function battle:item/hummer2/dash 1t append
 ## タグの消去
 tag @s remove hummer2.target
 tag @e[type=armor_stand,tag=new] remove new
+tag @e[type=area_effect_cloud,tag=new] remove new
 
 ## 音
 playsound block.anvil.land neutral @a ~ ~ ~ 1.0 1.5 0.0
