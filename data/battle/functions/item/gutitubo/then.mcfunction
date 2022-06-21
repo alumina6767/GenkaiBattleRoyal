@@ -17,6 +17,9 @@ execute anchored eyes run tp @e[type=armor_stand,tag=new] ^ ^ ^2 facing entity @
 ## チームIDを取得
 scoreboard players operation _ battle.team = @s battle.team
 
+## 召喚主情報を取得
+scoreboard players operation _ uuid3 = @s uuid3
+
 ## 実行主をぐちつぼに
 execute as @e[type=armor_stand,tag=new,distance=..5] at @s run function battle:item/gutitubo/then2
 
