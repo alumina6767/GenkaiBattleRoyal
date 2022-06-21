@@ -53,7 +53,7 @@ scoreboard players operation delta_rx _ *= @s hummer2.speed
 scoreboard players operation delta_rx _ /= 100 const
 scoreboard players operation delta_rx _ /= 100 const
 
-execute if score delta_rx _ matches 5500.. run scoreboard players set delta_rx _ 5500
+execute if score delta_rx _ matches 4500.. run scoreboard players set delta_rx _ 4500
 
 ## もとの方角がマイナスのときにバグる
 #execute if score rx _ matches ..0 run scoreboard players remove delta_rx _ 36
@@ -67,9 +67,9 @@ execute store result entity @s Rotation[0] float 0.01 run scoreboard players get
 ## 音
 execute if score delta_rx _ matches 300..1000 if predicate battle:chance/0.1 run playsound entity.ender_dragon.flap neutral @a ~ ~ ~ 1.0 0.5 0.0
 execute if score delta_rx _ matches 1001..3000 if predicate battle:chance/0.2 run playsound entity.ender_dragon.growl neutral @a ~ ~ ~ 1.0 0.7 0.0
-execute if score delta_rx _ matches 3001..5500 if predicate battle:chance/0.5 run playsound block.ladder.step neutral @a ~ ~ ~ 1.0 0.5 0.0
-execute if score delta_rx _ matches 3001..5500 if predicate battle:chance/0.5 run playsound entity.ender_dragon.flap neutral @a ~ ~ ~ 1.0 0.5 0.0
-execute if score delta_rx _ matches 3001..5500 if predicate battle:chance/0.5 run playsound item.trident.riptide_3 neutral @a ~ ~ ~ 1.0 0.5 0.0
+execute if score delta_rx _ matches 3001..4500 if predicate battle:chance/0.5 run playsound block.ladder.step neutral @a ~ ~ ~ 1.0 0.5 0.0
+execute if score delta_rx _ matches 3001..4500 if predicate battle:chance/0.5 run playsound entity.ender_dragon.flap neutral @a ~ ~ ~ 1.0 0.5 0.0
+execute if score delta_rx _ matches 3001..4500 if predicate battle:chance/0.5 run playsound item.trident.riptide_3 neutral @a ~ ~ ~ 1.0 0.5 0.0
 
 ## パーティクル
 execute anchored eyes run particle flame ^-1 ^-0.5 ^3 0.1 0.1 0.1 0.1 10 force
@@ -83,12 +83,12 @@ scoreboard players reset delta_rx _
 #endregion
 
 ## 加速分を増加
-scoreboard players add @s hummer2.speed 15
+scoreboard players add @s hummer2.speed 10
 
 #region 攻撃判定
 scoreboard players operation _ uuid3 = @s uuid3
 scoreboard players operation _ battle.team = @s battle.team
 execute as @a if score @s uuid3 = _ uuid3 run tag @s add target
-execute positioned ^ ^ ^2 as @a[predicate=!battle:same_team,predicate=battle:can_take_damage,distance=..2] unless entity @s[scores={hummer2.damage_cd=1..}] at @s run function battle:item/hummer2/attack
+execute positioned ^ ^ ^2 as @e[predicate=!battle:same_team,predicate=battle:can_take_damage,distance=..2] unless entity @s[scores={hummer2.damage_cd=1..}] at @s run function battle:item/hummer2/attack
 tag @a[tag=target] remove target
 #endregion
