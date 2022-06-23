@@ -8,3 +8,6 @@ execute if entity @s[scores={battle=..30}] run function battle:item/gutitubo/tic
 
 ## パーティクル
 particle dust 0.918 0.918 0.918 4 ^ ^3.0 ^-2.0 2 2 2 1.0 10 force
+
+## 足音
+function battle:item/gutitubo/tick/step_sound

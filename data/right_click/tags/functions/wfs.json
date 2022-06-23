@@ -2,6 +2,8 @@
     "values": [
         "battle:item/champagne/if_rclicked",
         "battle:item/pyoniper2/triger/unreloaded",
-        "battle:item/cipher/if"
-        ]
+        "battle:item/cipher/if",        
+        "battle:item/hummer/if",
+        "battle:item/hummer2/if"
+    ]
 }

@@ -2,4 +2,4 @@
 # 使用判定
 # @within right_click:**
 
-execute if score @s main_hand matches 670030 run function battle:item/gutitubo/then
+execute if entity @s[scores={main_hand=670030}] unless entity @s[scores={tori.use_cd=1..}] run function battle:item/gutitubo/then

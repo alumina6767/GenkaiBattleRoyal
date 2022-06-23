@@ -13,7 +13,7 @@ execute if data storage tmp target_slots[-1] run function battle:item/pyoniper2/
 data remove storage tmp target_slots
 
 ## リロード完了音
-playsound item.crossbow.loading_end player @s ~ ~ ~ 2 0.5 0
+function battle:sound/reload
 
 ## すべてのリロードが終了したらスコアのリセット
 scoreboard players reset @s pyoniper2.reload

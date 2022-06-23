@@ -20,6 +20,9 @@ scoreboard players operation @e[type=slime,tag=new] battle.team = @s battle.team
 ## チームに入れる
 execute as @e[type=slime,tag=new] run function battle:id2team
 
+## 召喚主を保存
+scoreboard players operation @e[type=slime,tag=new] uuid3 = @s uuid3
+
 ## 残存時間
 scoreboard players set @e[type=area_effect_cloud,tag=new] battle 100
 scoreboard players set @e[type=slime,tag=new] battle 100

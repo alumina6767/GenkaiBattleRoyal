@@ -13,6 +13,9 @@ execute if entity @s[scores={battle=..30}] run function battle:item/gutitubo/tic
 ## パーティクル
 particle dust 0.918 0.918 0.918 4 ^ ^3.0 ^-2.0 2 2 2 1.0 10 force
 
+## 足音
+function battle:item/gutitubo/tick/step_sound
+
 ## 一旦ストレージに代入
 # data modify storage tmp Motion set value [0.0,0.0,0.0]
 # execute store result storage tmp Motion[0] double 0.001 run scoreboard players get @s mx
