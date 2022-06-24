@@ -7,6 +7,9 @@
     #declare tag paint.bullet 弾丸につける
     #declare tag paint.bullet.move 動いている弾丸
 
+## アイテムの消費
+function share:remove_mainhand
+
 ## 絵の生成
 #summon item ~ ~ ~ {NoGravity:1b,Glowing:1b,Age:5900,PickupDelay:200,Tags:["new","paint.bullet","paint.bullet.move"],Item:{id:"minecraft:oak_boat",Count:1b}}
 #summon armor_stand ~ ~ ~ {NoGravity:1b,Glowing:1b,Small:1b,Tags:["new","paint.bullet","paint.bullet.move"],Passengers:[{id:"minecraft:item",NoGravity:1b,Glowing:1b,Age:5900,PickupDelay:200,Passengers:[{id:"minecraft:allay"}],Item:{id:"minecraft:ice",Count:1b}}]}
