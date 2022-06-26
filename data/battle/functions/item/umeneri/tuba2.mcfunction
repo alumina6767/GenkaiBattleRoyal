@@ -20,6 +20,7 @@ execute as @s[tag=!level2] run tag @e[type=llama_spit,tag=new,dx=0,limit=1] add 
 
 ## Ownerを更新
 data modify entity @e[type=llama_spit,tag=new,dx=0,limit=1] Owner set from entity @s UUID
+scoreboard players operation @e[type=llama_spit,tag=new,dx=0,limit=1] uuid3 = @s uuid3
 
 ## マーカーをkill
 kill 00000006-0000-0007-0000-000000000007
