@@ -9,7 +9,7 @@
 
 ## ぐちつぼを召喚
 execute anchored eyes run summon armor_stand ^ ^ ^2 {Invisible:1b,Marker:1b,Tags:["battle.gutitubo","new"]}
-execute anchored eyes run summon armor_stand ^ ^ ^2 {Invisible:1b,Invulnerable:1b,Glowing:1b,Tags:["battle.gutitubo.body","new"],ArmorItems:[{},{},{},{id:"minecraft:cactus",Count:1b,tag:{display:{Name:'{"text":"sup_big"}'}}}]}
+execute anchored eyes run summon armor_stand ^ ^ ^2 {Invisible:1b,Invulnerable:1b,Glowing:1b,Tags:["battle.gutitubo.body","new"],ArmorItems:[{},{},{},{id:"minecraft:ender_eye",Count:1b,tag:{CustomModelData:670031}}]}
 
 ## 召喚主の方に顔を向けさせる
 execute anchored eyes run tp @e[type=armor_stand,tag=new] ^ ^ ^2 facing entity @s eyes
