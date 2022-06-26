@@ -18,4 +18,4 @@ scoreboard players reset @s hummer2.dash
 
 ## 使用クールダウンの設定
 scoreboard players set @s hummer2.use_cd 100
-schedule function battle:item/hummer2/use_cd 1t append
+schedule function battle:item/hummer2/use_cd/tick 1t append
