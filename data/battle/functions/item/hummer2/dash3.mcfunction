@@ -89,6 +89,7 @@ scoreboard players add @s hummer2.speed 10
 scoreboard players operation _ uuid3 = @s uuid3
 scoreboard players operation _ battle.team = @s battle.team
 execute as @a if score @s uuid3 = _ uuid3 run tag @s add target
-execute positioned ^ ^ ^2 as @e[predicate=!battle:same_team,predicate=battle:can_take_damage,distance=..2] unless entity @s[scores={hummer2.damage_cd=1..}] at @s run function battle:item/hummer2/attack
+execute if entity @s[tag=barrier.blockable] positioned ^ ^ ^2 as @e[tag=!battle.boss,predicate=!battle:same_team,predicate=battle:can_take_damage,distance=..2] unless entity @s[scores={hummer2.damage_cd=1..}] at @s run function battle:item/hummer2/attack
+execute if entity @s[tag=!barrier.blockable] positioned ^ ^ ^2 as @e[predicate=!battle:same_team,predicate=battle:can_take_damage,distance=..2] unless entity @s[scores={hummer2.damage_cd=1..}] at @s run function battle:item/hummer2/attack
 tag @a[tag=target] remove target
 #endregion

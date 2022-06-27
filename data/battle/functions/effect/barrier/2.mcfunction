@@ -49,7 +49,7 @@ execute as @a[tag=owner] at @s run playsound block.anvil.place neutral @s ~ ~ ~ 
 execute as @a[tag=owner] at @s run playsound item.shield.block neutral @s ~ ~ ~ 0.1 2.0 0.0
 
 ## 矢を消す
-kill @s
+kill @s[tag=!battle.invulnerable]
 
 ## タグを消去
 tag @a[tag=owner] remove owner
