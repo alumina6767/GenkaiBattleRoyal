@@ -2,8 +2,9 @@
 # 発砲する
 # @internal
 
-## 弾を召喚
-execute anchored eyes run summon armor_stand ^ ^ ^ {Tags:["new","pyoniper2.bullet","barrier.blockable"],Small:1b,Marker:1b,Invisible:1b,Silent:1b}
+## 弾を召喚 ボスが撃ったものはバリアで防げない
+execute as @s[tag=!battle.boss] anchored eyes run summon armor_stand ^ ^ ^ {Tags:["new","pyoniper2.bullet","barrier.blockable"],Small:1b,Marker:1b,Invisible:1b,Silent:1b}
+execute as @s[tag=battle.boss] anchored eyes run summon armor_stand ^ ^ ^ {Tags:["new","pyoniper2.bullet"],Small:1b,Marker:1b,Invisible:1b,Silent:1b}
 execute anchored eyes run tp @e[type=armor_stand,tag=new] ^ ^ ^0.01 ~ ~
 
 ## 代入するスコアを確保
