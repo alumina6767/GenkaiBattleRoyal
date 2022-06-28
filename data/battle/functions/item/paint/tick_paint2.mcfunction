@@ -22,7 +22,8 @@ execute if entity @s[tag=paint.bullet.move] run function battle:item/paint/rayca
 ## 付近のプレイヤーに攻撃判定
 scoreboard players operation _ battle.team = @s battle.team
 scoreboard players operation _ uuid3 = @s uuid3
-execute as @a[distance=..7,predicate=!battle:same_team,predicate=battle:can_take_damage] unless entity @s[scores={paint.damage.cool_down=1..}] run function battle:item/paint/hit
+execute if entity @s[tag=!barrier.blockable] as @a[distance=..7,predicate=!battle:same_team,predicate=battle:can_take_damage] unless entity @s[scores={paint.damage.cool_down=1..}] run function battle:item/paint/hit
+execute if entity @s[tag=barrier.blockable] as @a[tag=!barrier.effect,distance=..7,predicate=!battle:same_team,predicate=battle:can_take_damage] unless entity @s[scores={paint.damage.cool_down=1..}] run function battle:item/paint/hit
 
 ## 前進
 tp @s[tag=paint.bullet.move] ^ ^ ^0.25

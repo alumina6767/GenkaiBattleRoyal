@@ -49,5 +49,8 @@ execute as @e[type=#impact_projectiles] unless entity @s[scores={uuid3=-21474836
 ## teamの指定されていない飛び道具にteamを指定する
 execute as @e[type=#impact_projectiles] unless entity @s[scores={battle.team=1..100}] at @s run scoreboard players operation @s battle.team = @p battle.team
 
+## scheduleの不都合を防ぐための定期実行
+execute if score clock battle matches 5 run function #battle:cron
+
 ## プレイヤーデータを使用する処理
 execute as @a at @s run function battle:main2

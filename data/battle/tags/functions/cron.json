@@ -1,0 +1,8 @@
+{
+    "comment" : "定期的に実行するfunction",
+    "values": [
+        "battle:item/paint/tick_paint",
+        "battle:item/paint/tick_cool_down",
+        "battle:item/paint/tick_damage_cool_down.mcfunction"
+    ]
+}

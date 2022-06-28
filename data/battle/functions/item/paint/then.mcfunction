@@ -13,7 +13,8 @@ function share:remove_mainhand
 ## 絵の生成
 #summon item ~ ~ ~ {NoGravity:1b,Glowing:1b,Age:5900,PickupDelay:200,Tags:["new","paint.bullet","paint.bullet.move"],Item:{id:"minecraft:oak_boat",Count:1b}}
 #summon armor_stand ~ ~ ~ {NoGravity:1b,Glowing:1b,Small:1b,Tags:["new","paint.bullet","paint.bullet.move"],Passengers:[{id:"minecraft:item",NoGravity:1b,Glowing:1b,Age:5900,PickupDelay:200,Passengers:[{id:"minecraft:allay"}],Item:{id:"minecraft:ice",Count:1b}}]}
-summon armor_stand ^ ^ ^ {NoGravity:1b,Silent:1b,Small:1b,Invisible:1b,Invulnerable:1b,Marker:1b,Tags:["new","paint.bullet","paint.bullet.move"],Passengers:[{id:"minecraft:item",NoGravity:1b,Glowing:1b,Age:5800,PickupDelay:2000,Item:{id:"minecraft:oak_boat",Count:1b}}]}
+execute if entity @s[tag=battle.boss] run summon armor_stand ^ ^ ^ {NoGravity:1b,Silent:1b,Small:1b,Invisible:1b,Invulnerable:1b,Marker:1b,Tags:["new","paint.bullet","paint.bullet.move","battle.invulnerable"],Passengers:[{id:"minecraft:item",NoGravity:1b,Glowing:1b,Age:5800,PickupDelay:2000,Item:{id:"minecraft:oak_boat",Count:1b}}]}
+execute if entity @s[tag=!battle.boss] run summon armor_stand ^ ^ ^ {NoGravity:1b,Silent:1b,Small:1b,Invisible:1b,Invulnerable:1b,Marker:1b,Tags:["new","paint.bullet","paint.bullet.move","barrier.blockable","battle.invulnerable"],Passengers:[{id:"minecraft:item",NoGravity:1b,Glowing:1b,Age:5800,PickupDelay:2000,Item:{id:"minecraft:oak_boat",Count:1b}}]}
 
 ## スコアの準備
 scoreboard players operation _ battle.team = @s battle.team
