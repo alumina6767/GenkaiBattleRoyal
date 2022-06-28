@@ -12,6 +12,8 @@
     #declare score_holder slot
     #declare score_holder tarako.interval
     #declare score_holder battle.team
+    #declare score_holder commpass.timer 0の時コンパスの処理を実行
+    #declare score_holder cron.timer 0の時定期実行の処理を行う
 
 ## 最大HP
 scoreboard objectives add max_health dummy
@@ -21,8 +23,9 @@ scoreboard objectives add battle.health health
 ## 汎用スコアボード
 scoreboard objectives add battle dummy
 
+## クロック
 scoreboard players set clock battle -1
-scoreboard players set interval battle 10
+scoreboard players set interval battle 2000
 
 ## チーム数
 execute unless score team_n battle matches -2147483648..2147483647 run scoreboard players set team_n battle 2

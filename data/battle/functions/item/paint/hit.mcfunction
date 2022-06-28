@@ -19,4 +19,4 @@ scoreboard players set @s battle.hurt_with 670110
 scoreboard players set @s paint.damage.cool_down 10
 
 ## クールダウン減少ループ
-schedule function battle:item/paint/tick_damage_cool_down.mcfunction 1t append
+schedule function battle:item/paint/tick_damage_cool_down 1t append

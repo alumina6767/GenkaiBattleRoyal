@@ -1,6 +1,6 @@
 #> battle:item/gutitubo/tick/
 # tick処理
-# @within battle:item/gutitubo/**
+# @internal
 
 #>
 # @internal

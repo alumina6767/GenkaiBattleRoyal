@@ -38,10 +38,9 @@ function battle:effect/barrier/tick
 function battle:game/bossbar/tick
 
 ## コンパスの更新
-execute if score clock battle matches 0 run function battle:item/compass/tick
-
-## たらこ
-execute if score clock battle matches 0 run schedule function battle:item/umeneri/tick/ 1t append
+scoreboard players operation commpass.timer battle = clock battle
+scoreboard players operation commpass.timer battle %= 10 const
+execute if score commpass.timer battle matches 0 run function battle:item/compass/tick
 
 ## uuid3の指定されていない飛び道具にuuid3を指定する
 execute as @e[type=#impact_projectiles] unless entity @s[scores={uuid3=-2147483648..2147483647}] at @s run scoreboard players operation @s uuid3 = @p uuid3
@@ -50,7 +49,9 @@ execute as @e[type=#impact_projectiles] unless entity @s[scores={uuid3=-21474836
 execute as @e[type=#impact_projectiles] unless entity @s[scores={battle.team=1..100}] at @s run scoreboard players operation @s battle.team = @p battle.team
 
 ## scheduleの不都合を防ぐための定期実行
-execute if score clock battle matches 5 run function #battle:cron
+scoreboard players operation cron.timer battle = clock battle
+scoreboard players operation cron.timer battle %= 100 const
+execute if score cron.timer battle matches 5 run function #battle:cron
 
 ## プレイヤーデータを使用する処理
 execute as @a at @s run function battle:main2

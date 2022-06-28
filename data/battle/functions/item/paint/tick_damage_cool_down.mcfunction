@@ -1,4 +1,4 @@
-#> battle:item/paint/tick_damage_cool_down.mcfunction
+#> battle:item/paint/tick_damage_cool_down
 # ダメージ判定のクールダウン減少
 # @internal
 
@@ -9,4 +9,4 @@ scoreboard players remove @a[scores={paint.damage.cool_down=1..}] paint.damage.c
 scoreboard players reset @a[scores={paint.damage.cool_down=0}] paint.damage.cool_down
 
 ## ループ処理
-execute if entity @a[scores={paint.damage.cool_down=1..},limit=1] run schedule function battle:item/paint/tick_damage_cool_down.mcfunction 1t append
+execute if entity @a[scores={paint.damage.cool_down=1..},limit=1] run schedule function battle:item/paint/tick_damage_cool_down 1t append

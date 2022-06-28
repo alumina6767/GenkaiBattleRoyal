@@ -1,8 +1,43 @@
 {
     "comment" : "定期的に実行するfunction",
     "values": [
+        "battle:effect/high_knockback/count",
+
+        "battle:effect/jump_small_2/particle",
+
+        "battle:item/jump_pad_small_2/tick",
+
+        "battle:item/bits/throw/tick",
+        "battle:item/bits/throw/tick2",
+
+        "battle:item/champagne/shoot1/loop",
+        "battle:item/champagne/shoot1/tick",
+        "battle:item/champagne/shoot2/loop",
+        "battle:item/champagne/shoot2/tick",
+        "battle:item/champagne/shoot3/loop",
+        "battle:item/champagne/shoot3/tick",
+
+        "battle:item/gutitubo/tick/",
+        "battle:item/gutitubo/damage/cool_down",
+        "battle:item/gutitubo/tick/use_cd",
+
+        "battle:item/hummer/dash",
+
+        "battle:item/hummer2/damage_cd",
+        "battle:item/hummer2/dash",
+        "battle:item/hummer2/use_cd/tick",
+
         "battle:item/paint/tick_paint",
         "battle:item/paint/tick_cool_down",
-        "battle:item/paint/tick_damage_cool_down.mcfunction"
+        "battle:item/paint/tick_damage_cool_down",
+
+        "battle:item/pyoniper/bullet/tick",
+        "battle:item/pyoniper/reload/tick",
+
+        "battle:item/pyoniper2/bullet/tick",
+        "battle:item/pyoniper2/reload/tick",
+
+        "battle:item/umeneri/particle_tuba",
+        "battle:item/umeneri/tick/"
     ]
 }
