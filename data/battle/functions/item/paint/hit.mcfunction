@@ -2,7 +2,8 @@
 # hit処理
 # @internal
 
-## ダメージを与える
+## ダメージ音
+playsound entity.player.hurt player @a ~ ~ ~ 1 1 0
 
 ## 与えたいダメージを設定 (小数点2桁まで有効)
 data modify storage score_damage: Argument set value {Damage:1.2}

@@ -3,13 +3,13 @@
 # @internal
 
 ## ボスを見た人
-scoreboard players set @a[predicate=battle:looking_at/boss_a] hp.a_visible 100
-scoreboard players set @a[predicate=battle:looking_at/boss_b] hp.b_visible 100
-scoreboard players set @a[predicate=battle:looking_at/boss_c] hp.c_visible 100
-scoreboard players set @a[predicate=battle:looking_at/boss_d] hp.d_visible 100
-scoreboard players set @a[predicate=battle:looking_at/boss_e] hp.e_visible 100
-scoreboard players set @a[predicate=battle:looking_at/boss_f] hp.f_visible 100
-scoreboard players set @a[predicate=battle:looking_at/boss_g] hp.g_visible 100
+scoreboard players set @a[predicate=battle:looking_at/boss/a] hp.a_visible 100
+scoreboard players set @a[predicate=battle:looking_at/boss/b] hp.b_visible 100
+scoreboard players set @a[predicate=battle:looking_at/boss/c] hp.c_visible 100
+scoreboard players set @a[predicate=battle:looking_at/boss/d] hp.d_visible 100
+scoreboard players set @a[predicate=battle:looking_at/boss/e] hp.e_visible 100
+scoreboard players set @a[predicate=battle:looking_at/boss/f] hp.f_visible 100
+scoreboard players set @a[predicate=battle:looking_at/boss/g] hp.g_visible 100
 
 ## 更新
 execute as @a[tag=battle.boss] run function battle:game/bossbar/update

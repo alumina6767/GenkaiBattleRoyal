@@ -2,6 +2,9 @@
 # チームを解散する
 # @internal
 
+## ボスからバリアを消去
+tag @a[tag=battle.boss] remove barrier.effect
+
 ## ボスタグを消去
 tag @a[tag=battle.boss] remove battle.boss
 

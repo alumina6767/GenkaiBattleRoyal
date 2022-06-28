@@ -5,6 +5,7 @@
 #>
 # @internal
     #declare tag barrier.blockable バリアで消すことのできるエンティティ
+    #declare tag barrier.effect バリアエフェクトがかかっているエンティティ
 
 ## ボスのチームを所得
 scoreboard players operation _ battle.team = @s battle.team

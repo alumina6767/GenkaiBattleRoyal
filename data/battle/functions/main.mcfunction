@@ -18,19 +18,19 @@ execute as @a[scores={battle.death=1..}] run function battle:death/
 function battle:effect/jump_small_2/tick
 
 ## ボスを見ている時 弱体化エフェクト 極まれにジャンプ切りするとダメージが入る
-execute as @a[tag=looking_at_boss,predicate=!battle:looking_at/boss] run function battle:effect/weak/clear
-execute as @a[team=!A,tag=!battle.boss,predicate=battle:looking_at/boss_a] run function battle:effect/weak/
-execute as @a[team=!B,tag=!battle.boss,predicate=battle:looking_at/boss_b] run function battle:effect/weak/
-execute as @a[team=!C,tag=!battle.boss,predicate=battle:looking_at/boss_c] run function battle:effect/weak/
-execute as @a[team=!D,tag=!battle.boss,predicate=battle:looking_at/boss_d] run function battle:effect/weak/
-execute as @a[team=!E,tag=!battle.boss,predicate=battle:looking_at/boss_e] run function battle:effect/weak/
-execute as @a[team=!F,tag=!battle.boss,predicate=battle:looking_at/boss_f] run function battle:effect/weak/
-execute as @a[team=!G,tag=!battle.boss,predicate=battle:looking_at/boss_g] run function battle:effect/weak/
+execute as @a[tag=looking_at_boss,predicate=!battle:looking_at/player_with_barrier/any] run function battle:effect/weak/clear
+execute as @a[team=!A,tag=!battle.boss,predicate=battle:looking_at/player_with_barrier/a] run function battle:effect/weak/
+execute as @a[team=!B,tag=!battle.boss,predicate=battle:looking_at/player_with_barrier/b] run function battle:effect/weak/
+execute as @a[team=!C,tag=!battle.boss,predicate=battle:looking_at/player_with_barrier/c] run function battle:effect/weak/
+execute as @a[team=!D,tag=!battle.boss,predicate=battle:looking_at/player_with_barrier/d] run function battle:effect/weak/
+execute as @a[team=!E,tag=!battle.boss,predicate=battle:looking_at/player_with_barrier/e] run function battle:effect/weak/
+execute as @a[team=!F,tag=!battle.boss,predicate=battle:looking_at/player_with_barrier/f] run function battle:effect/weak/
+execute as @a[team=!G,tag=!battle.boss,predicate=battle:looking_at/player_with_barrier/g] run function battle:effect/weak/
 
 #execute as @a[tag=battle.boss] at @s run function battle:effect/weak_area
 
 ## ボスの近くに矢が来た時 弾く
-execute as @a[tag=battle.boss] at @s run function battle:effect/barrier/
+execute as @a[tag=battle.boss,tag=barrier.effect] at @s run function battle:effect/barrier/
 
 function battle:effect/barrier/tick
 

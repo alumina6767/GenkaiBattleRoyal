@@ -3,8 +3,8 @@
 # @internal
 
 ## ボスのバリア判定
-execute if entity @s[tag=barrier.blockable] if entity @a[tag=battle.boss,predicate=!battle:same_team,distance=..3.5,limit=1] run scoreboard players set .itt raycast 0
-execute if entity @s[tag=barrier.blockable] as @a[tag=battle.boss,predicate=!battle:same_team,distance=..3.5] at @s run function battle:effect/barrier/
+execute if entity @s[tag=barrier.blockable] if entity @a[tag=barrier.effect,predicate=!battle:same_team,distance=..3.5,limit=1] run scoreboard players set .itt raycast 0
+execute if entity @s[tag=barrier.blockable] as @a[tag=barrier.effect,predicate=!battle:same_team,distance=..3.5] at @s run function battle:effect/barrier/
 
 ## パーティクル
 particle dust 1 0.769 0.984 1.5 ~ ~ ~ 0.01 0.01 0.01 0 1 force
