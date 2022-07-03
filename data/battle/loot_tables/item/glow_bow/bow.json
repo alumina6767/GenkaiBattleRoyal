@@ -1,63 +1,62 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:bow",
-            "functions": [
-              {
-                "function": "minecraft:set_nbt",
-                "tag": "{HideFlags:127,Unbreakable:1b}"
-              },
-              {
-                "function": "minecraft:set_name",
-                "entity": "this",
-                "name": [
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bow",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:127,Unbreakable:1b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": [
+                {
+                  "text": "発光棘弓 ",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": " [ 5 ]",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
                   {
-                    "text": "発光棘弓 ",
-                    "color": "green",
-                    "italic": false
-                  },
-                  {
-                    "text": " [ 5 ]",
-                    "color": "gold",
-                    "italic": false
-                  }
-                ]
-              },
-              {
-                "function": "minecraft:set_lore",
-                "entity": "this",
-                "lore": [
-                  [
-                    {
-                      "text": "発光時間 : 9sec",
-                      "color": "white",
-                      "italic": false
-                    }
-                  ],
-                  {
-                    "text": "弾の上限 : 5発",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "text": "クールタイム : 75sec",
+                    "text": "発光時間 : 9sec",
                     "color": "white",
                     "italic": false
                   }
-                ]
-              },
-              {
-                "function": "minecraft:set_nbt",
-                "tag": "{glow_bow:1b,ammo:5,max:1b,CustomModelData:670100}"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-  
+                ],
+                {
+                  "text": "弾の上限 : 5発",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "クールタイム : 75sec",
+                  "color": "white",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{glow_bow:1b,ammo:5,max:1b,CustomModelData:670100}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

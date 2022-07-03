@@ -25,6 +25,6 @@
     }
   },
   "rewards": {
-      "function": "battle:item/pyoniper2/get_unreload"
+    "function": "battle:item/pyoniper2/get_unreload"
   }
 }

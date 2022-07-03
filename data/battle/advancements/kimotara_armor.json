@@ -13,7 +13,8 @@
     "requirement": {
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
-        "player": [{
+        "player": [
+          {
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {

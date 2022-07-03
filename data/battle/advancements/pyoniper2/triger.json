@@ -10,6 +10,6 @@
     }
   },
   "rewards": {
-      "function": "battle:item/pyoniper2/triger/"
+    "function": "battle:item/pyoniper2/triger/"
   }
 }

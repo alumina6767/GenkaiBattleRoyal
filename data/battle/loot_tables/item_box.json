@@ -55,9 +55,9 @@
           "weight": 50
         },
         {
-            "type": "loot_table",
-            "name" :"main:soudan_arrow",
-            "weight": 10
+          "type": "loot_table",
+          "name": "main:soudan_arrow",
+          "weight": 10
         }
       ]
     }

@@ -1,21 +1,20 @@
 {
-    "criteria": {
-      "change": {
-        "trigger": "minecraft:inventory_changed",
-        "conditions": {
-          "items": [
-            {
-              "items": [
-                "minecraft:arrow"
-              ],
-              "nbt": "{glow_bow_arrow:1b}"
-            }
-          ]
-        }
+  "criteria": {
+    "change": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:arrow"
+            ],
+            "nbt": "{glow_bow_arrow:1b}"
+          }
+        ]
       }
-    },
-    "rewards": {
-      "function": "battle:item/glow_bow/clear"
     }
+  },
+  "rewards": {
+    "function": "battle:item/glow_bow/clear"
   }
-  
+}

@@ -1,17 +1,16 @@
 {
-    "criteria": {
-      "tick": {
-        "trigger": "minecraft:tick",
-        "conditions": {
-          "player": {
-            "type": "minecraft:player",
-            "nbt": "{Inventory:[{id:\"minecraft:bow\",tag:{glow_bow:1b,max:0b}}]}"
-          }
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type": "minecraft:player",
+          "nbt": "{Inventory:[{id:\"minecraft:bow\",tag:{glow_bow:1b,max:0b}}]}"
         }
       }
-    },
-    "rewards": {
-      "function": "battle:item/glow_bow/reloading"
     }
+  },
+  "rewards": {
+    "function": "battle:item/glow_bow/reloading"
   }
-  
+}

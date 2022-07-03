@@ -3,10 +3,11 @@
     "requirement": {
       "trigger": "minecraft:placed_block",
       "conditions": {
-        "player": [{
-          "condition": "reference",
-          "name": "battle:playing"
-        }
+        "player": [
+          {
+            "condition": "reference",
+            "name": "battle:playing"
+          }
         ],
         "block": "minecraft:crafting_table"
       }

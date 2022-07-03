@@ -21,8 +21,16 @@
             {
               "function": "minecraft:set_lore",
               "lore": [
-                { "text": "飲むと全回復するシャンパン。", "color": "#f65bfe", "italic": false},
-                { "text": "たくさん振るとガトリングに変化する。", "color": "#f65bfe", "italic": false},
+                {
+                  "text": "飲むと全回復するシャンパン。",
+                  "color": "#f65bfe",
+                  "italic": false
+                },
+                {
+                  "text": "たくさん振るとガトリングに変化する。",
+                  "color": "#f65bfe",
+                  "italic": false
+                },
                 "",
                 [
                   {
