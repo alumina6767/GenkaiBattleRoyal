@@ -7,7 +7,7 @@
     #declare tag battle.tori2
 
 ## tori2
-summon area_effect_cloud 0 1000 0 {Duration:10000,CustomNameVisible:0b,Silent:1b,Invulnerable:1b,Tags:["new","battle.tori2","battle.tori"],Passengers:[{id:"minecraft:slime",NoGravity:1b,Silent:1b,Invulnerable:1b,CustomNameVisible:0b,NoAI:1b,Size:0,Tags:["new","battle.tori2","battle.tori"],CustomName:'{"text":"tori2"}'},{id:"minecraft:slime",NoGravity:1b,Silent:1b,Invulnerable:1b,CustomNameVisible:0b,NoAI:0b,Size:0,Tags:["new","battle.tori2","battle.tori"],CustomName:'{"text":"とり２"}',ActiveEffects:[{Id:14b,Amplifier:0b,Duration:10000,ShowParticles:0b}],Attributes:[{Name:"generic.attack_damage",Base:0.001}]}]}
+summon area_effect_cloud 0 1000 0 {Duration:10000,CustomNameVisible:0b,Silent:1b,Invulnerable:1b,Tags:["new","battle.tori2","battle.tori"],Passengers:[{id:"minecraft:slime",NoGravity:1b,Silent:1b,Invulnerable:1b,CustomNameVisible:0b,NoAI:1b,Size:0,Tags:["new","battle.tori2","battle.tori"],CustomName:'{"text":"tori2"}'},{id:"minecraft:slime",NoGravity:1b,Silent:1b,Invulnerable:1b,CustomNameVisible:0b,NoAI:0b,Size:0,Tags:["new","battle.tori2","battle.tori"],CustomName:'{"text":"とり２"}',ActiveEffects:[{Id:14,Amplifier:0b,Duration:10000,ShowParticles:0b}],Attributes:[{Name:"generic.attack_damage",Base:0.001}]}]}
 
 ## 向きを指定
 tp @e[type=area_effect_cloud,tag=new] ~ ~ ~ facing entity @s eyes

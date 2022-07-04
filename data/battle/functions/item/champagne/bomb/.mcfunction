@@ -3,7 +3,7 @@
 # @internal
 
 ## クリーパーの召喚
-summon creeper ~ 200 ~ {Fire:1,NoGravity:1b,Silent:1b,Invulnerable:1b,NoAI:1b,Fuse:2,ignited:1b,Tags:["new"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:1,ShowParticles:0b}]}
+summon creeper ~ 200 ~ {Fire:1,NoGravity:1b,Silent:1b,Invulnerable:1b,NoAI:1b,Fuse:2,ignited:1b,Tags:["new"],ActiveEffects:[{Id:14,Amplifier:1b,Duration:1,ShowParticles:0b}]}
 
 ## 透明化エフェクトがちゃんと掛かるようにtp
 tp @e[type=creeper,tag=new] ~ ~ ~
