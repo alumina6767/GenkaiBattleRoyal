@@ -12,7 +12,7 @@ function battle:id2team
 scoreboard players operation @s uuid3 = _ uuid3
 
 ## 向きの指定
-tp @s ^ ^ ^0.0 ~ ~
+tp @s ^ ^ ^1.0 ~ ~
 
 ## タグの削除
 tag @s remove new
