@@ -1,0 +1,34 @@
+{
+    "criteria": {
+      "adv": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "type": "minecraft:player",
+            "equipment": {
+              "offhand": {
+                "items": [
+                  "minecraft:crossbow",
+                  "minecraft:stick"
+                ],
+                "nbt": "{gunhammer:1b}"
+              }
+            }
+          },
+          "items": [
+            {
+              "items": [
+                "minecraft:crossbow",
+                "minecraft:stick"
+              ],
+              "nbt": "{gunhammer:1b}"
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "battle:item/gun_hammer/change_to_hammer"
+    }
+  }
+  

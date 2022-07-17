@@ -1,0 +1,112 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stick",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": [
+                [
+                  {
+                    "text": "水鉄ピコパン",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": "【水鉄砲モード】 ",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "| 0 |",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "水鉄砲とピコハンに切り替えることができる武器。",
+                    "color": "#f65bfe",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "残りの弾数 : ",
+                    "color": "#f65bfe",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "0",
+                    "color": "green",
+                    "bold": false,
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": "  "
+                },
+                [
+                  {
+                    "keybind": "key.use",
+                    "color": "#ff6c2d",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": " : ",
+                    "color": "#ff6c2d",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "水鉄砲を撃つ",
+                    "color": "#fdbd1a",
+                    "bold": false,
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "keybind": "key.swapOffhand",
+                    "color": "#ff6c2d",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": " :",
+                    "color": "#ff6c2d",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "武器をハンマーに切り替える",
+                    "color": "#fdbd1a",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{gunhammer:1b,ammo:0}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

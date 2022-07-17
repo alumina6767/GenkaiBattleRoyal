@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:shot_crossbow",
+        "conditions": {
+          "item": {
+            "nbt": "{gunhammer:1b}"
+          }
+        }
+      }
+    },
+    "rewards": {
+        "function": "battle:item/gun_hammer/gun/shoot"
+    }
+  }
+  

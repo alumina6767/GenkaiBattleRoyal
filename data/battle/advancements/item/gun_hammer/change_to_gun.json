@@ -1,0 +1,32 @@
+{
+    "criteria": {
+      "adv": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "type": "minecraft:player",
+            "equipment": {
+              "offhand": {
+                "items": [
+                  "minecraft:carrot_on_a_stick"
+                ],
+                "nbt": "{gunhammer:1b}"
+              }
+            }
+          },
+          "items": [
+            {
+              "items": [
+                "minecraft:carrot_on_a_stick"
+              ],
+              "nbt": "{gunhammer:1b}"
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "battle:item/gun_hammer/change_to_gun"
+    }
+  }
+  

@@ -1,0 +1,15 @@
+{
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "minecraft:temp"
+    },
+    "ops": [
+      {
+        "source": "ammo",
+        "target": "ammo",
+        "op": "replace"
+      }
+    ]
+  }
+  
