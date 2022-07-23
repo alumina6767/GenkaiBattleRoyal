@@ -15,6 +15,7 @@
         "battle:item/glow_bow/load",
         "battle:item/paint/load",
         "battle:item/hummer/load",
-        "battle:item/hummer2/load"
+        "battle:item/hummer2/load",
+        "battle:item/gun_hammer/load"
     ]
 }

@@ -7,7 +7,7 @@ scoreboard players add @s gunhammer.rate 0
 # - 発砲不可
 execute if entity @s[scores={gunhammer.rate=1..}] store result score ammo _ run data get entity @s SelectedItem.tag.ammo
 execute if entity @s[scores={gunhammer.rate=1..}] store result storage minecraft:temp ammo int 1 run scoreboard players get ammo _
-execute if entity @s[scores={gunhammer.rate=1..}] run loot replace entity @s weapon.mainhand loot battle:item/gun_hammer/gun
+execute if entity @s[scores={gunhammer.rate=1..}] run loot replace entity @s weapon.mainhand loot battle:gun_hammer/gun
 execute if entity @s[scores={gunhammer.rate=1..}] run item modify entity @s weapon.mainhand battle:item/gun_hammer/ammo
 execute if entity @s[scores={gunhammer.rate=1..}] run data remove storage minecraft:temp ammo
 

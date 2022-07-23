@@ -55,3 +55,6 @@ execute if score cron.timer battle matches 5 run function #battle:cron
 
 ## プレイヤーデータを使用する処理
 execute as @a at @s run function battle:main2
+
+## ガンハンマーのtick処理
+function battle:item/gun_hammer/main

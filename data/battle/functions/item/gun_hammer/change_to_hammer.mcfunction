@@ -9,7 +9,7 @@ execute store result storage minecraft:temp ammo int 1 run data get entity @s In
 # アイテムを変更
 execute if entity @s[tag=weapon.change] run item replace entity @s weapon.offhand with air
 execute if entity @s[tag=weapon.change] run playsound block.piston.contract master @s ~ ~ ~ 0.3 2
-execute if entity @s[tag=weapon.change] run loot replace entity @s weapon.mainhand loot battle:item/gun_hammer/hammer
+execute if entity @s[tag=weapon.change] run loot replace entity @s weapon.mainhand loot battle:gun_hammer/hammer
 # 弾数を設定
 execute if entity @s[tag=weapon.change] run item modify entity @s weapon.mainhand battle:item/gun_hammer/ammo
 
