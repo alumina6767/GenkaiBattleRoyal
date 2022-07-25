@@ -11,6 +11,6 @@
     #declare tag Item.glowbow.arrow.have 追加の矢を持っているプレイヤーに対して付与されるタグ
 
 # クールタイム
-scoreboard objectives add glowbow.cooltime dummy [{"text": "発光棘弓クールタイム"}]
-scoreboard objectives add glowbow.use used:bow [{"text": "弓を使用する"}]
+scoreboard objectives add glowbow.cooltime dummy [{"text":"発光棘弓クールタイム"}]
+scoreboard objectives add glowbow.use used:bow [{"text":"弓を使用する"}]
 
