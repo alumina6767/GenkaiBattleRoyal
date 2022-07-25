@@ -81,7 +81,7 @@
               },
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{gunhammer:1b,CustomModelData:1}"
+                "tag": "{gunhammer:1b,CustomModelData:670142}"
               }
             ]
           }

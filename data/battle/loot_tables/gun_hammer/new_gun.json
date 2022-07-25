@@ -100,7 +100,7 @@
               },
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{HideFlags:127,gunhammer:1b,ammo:5,ChargedProjectiles:[{id:\"minecraft:air\",Count:1b},{},{}],Charged:1b}"
+                "tag": "{HideFlags:127,gunhammer:1b,ammo:5,ChargedProjectiles:[{id:\"minecraft:air\",Count:1b},{},{}],Charged:1b,CustomModelData:670140}"
               }
             ]
           }
