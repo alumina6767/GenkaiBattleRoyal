@@ -27,14 +27,14 @@ scoreboard objectives add battle dummy
 scoreboard players set clock battle -1
 scoreboard players set interval battle 2000
 
-## チーム数
-execute unless score team_n battle matches -2147483648..2147483647 run scoreboard players set team_n battle 2
-
 ## チームID
 scoreboard objectives add battle.team dummy
 
 ## 設定を表示するスコアボード
 scoreboard objectives add battle.setting dummy "設定"
+
+## チーム数
+execute unless score チーム数 battle.setting matches -2147483648..2147483647 run scoreboard players set チーム数 battle.setting 2
 
 ## 当たり判定を消すためだけのチーム
 team add no_collision

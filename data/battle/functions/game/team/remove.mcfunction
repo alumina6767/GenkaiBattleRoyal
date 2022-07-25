@@ -1,4 +1,4 @@
-#> battle:game/team_remove
+#> battle:game/team/remove
 # チームを解散する
 # @internal
 

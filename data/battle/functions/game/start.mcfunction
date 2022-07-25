@@ -23,3 +23,15 @@ bossbar set d players @a
 bossbar set e players @a
 bossbar set f players @a
 bossbar set g players @a
+
+bossbar set a visible true
+bossbar set b visible true
+bossbar set c visible true
+bossbar set d visible true
+bossbar set e visible true
+bossbar set f visible true
+bossbar set g visible true
+
+## ボスのバリア
+function battle:effect/barrier/summon
+tag @a[tag=battle.boss] add barrier.effect
