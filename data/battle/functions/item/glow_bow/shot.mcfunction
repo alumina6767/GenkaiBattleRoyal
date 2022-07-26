@@ -20,9 +20,9 @@ scoreboard players operation _ _ -= -1 _
 execute if score _ _ matches 0.. run item modify entity @s weapon.mainhand battle:item/glow_bow/ammo
 
 # もし通常の矢を持っていたら矢を1本与える(ゴーストアイテム対策で一度消す)
-execute if entity @s[tag=!Item.glowbow.arrow.have] run loot give @s loot battle:item/glow_bow/normal_arrow
+execute if entity @s[tag=!Item.glowbow.arrow.have] run loot give @s loot battle:glow_bow/normal_arrow
 execute if entity @s[tag=!Item.glowbow.arrow.have] run clear @s arrow 1
-execute if entity @s[tag=!Item.glowbow.arrow.have] run loot give @s loot battle:item/glow_bow/normal_arrow
+execute if entity @s[tag=!Item.glowbow.arrow.have] run loot give @s loot battle:glow_bow/normal_arrow
 
 # スコアリセット
 scoreboard players reset _ _
