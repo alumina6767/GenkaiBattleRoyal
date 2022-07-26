@@ -25,8 +25,8 @@ scoreboard players remove start_call _ 1
 ## ループ
 execute if score start_call _ matches 0.. run schedule function battle:game/start_call 1t append
 
-## スコアリセット
-execute if score start_call _ matches -1 run scoreboard players reset start_call
-
 ## スタートコマンド
 execute if score start_call _ matches -1 run function battle:game/start
+
+## スコアリセット
+execute if score start_call _ matches -1 run scoreboard players reset start_call
