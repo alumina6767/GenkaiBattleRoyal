@@ -35,9 +35,6 @@ execute if score .itt raycast matches 0 run scoreboard players set @s champagne.
 ## エンティティに当たった時
 execute if score .itt raycast matches -1 run function battle:item/champagne/shoot2/hit_entity
 
-## 壁もエンティティもなかった時
-execute if score .itt raycast matches 1 run tp ^ ^ ^2.5
-
 ## 持続時間を減らす
 scoreboard players remove @s champagne.time 1
 
