@@ -14,6 +14,12 @@ execute as @a[scores={battle.death=1..}] run function battle:death/
 #execute as @a[nbt={Health:0.0f}] run say boka-nn
 #execute as @a[scores={death=1}] run say hoo
 
+## uuid3の指定されていない飛び道具にuuid3を指定する
+execute as @e[type=#impact_projectiles] unless entity @s[scores={uuid3=-2147483648..2147483647}] at @s run scoreboard players operation @s uuid3 = @p uuid3
+
+## teamの指定されていない飛び道具にteamを指定する
+execute as @e[type=#impact_projectiles] unless entity @s[scores={battle.team=1..100}] at @s run scoreboard players operation @s battle.team = @p battle.team
+
 ## スライムジャンプ
 function battle:effect/jump_small_2/tick
 
@@ -41,12 +47,6 @@ function battle:game/bossbar/tick
 scoreboard players operation commpass.timer battle = clock battle
 scoreboard players operation commpass.timer battle %= 10 const
 execute if score commpass.timer battle matches 0 run function battle:item/compass/tick
-
-## uuid3の指定されていない飛び道具にuuid3を指定する
-execute as @e[type=#impact_projectiles] unless entity @s[scores={uuid3=-2147483648..2147483647}] at @s run scoreboard players operation @s uuid3 = @p uuid3
-
-## teamの指定されていない飛び道具にteamを指定する
-execute as @e[type=#impact_projectiles] unless entity @s[scores={battle.team=1..100}] at @s run scoreboard players operation @s battle.team = @p battle.team
 
 ## scheduleの不都合を防ぐための定期実行
 scoreboard players operation cron.timer battle = clock battle
