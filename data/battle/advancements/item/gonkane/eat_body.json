@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:tropical_fish"
+          ],
+          "nbt": "{CustomModelData:670023}"
+        }
+      }
+    }
+  },
+  "rewards":{
+    "function": "battle:item/gonkane/eat_body"
+  }
+}

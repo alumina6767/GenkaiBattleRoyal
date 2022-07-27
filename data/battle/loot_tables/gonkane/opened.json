@@ -8,6 +8,10 @@
           "name": "minecraft:ender_eye",
           "functions": [
             {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:670021}"
+            },
+            {
               "function": "minecraft:set_name",
               "entity": "this",
               "name": {
@@ -16,15 +20,34 @@
               }
             },
             {
-              "function": "minecraft:set_enchantments",
-              "enchantments": {},
-              "add": true,
-              "conditions": [
+              "function": "minecraft:set_lore",
+              "lore": [
                 {
-                  "condition": "minecraft:random_chance_with_looting",
-                  "chance": 0.1,
-                  "looting_multiplier": -0.5
-                }
+                  "text": "ひきちぎったおめめ",
+                  "color": "#f65bfe",
+                  "italic": false
+                },
+                "",
+                [
+                  {
+                    "keybind": "key.use長押し",
+                    "color": "#ff6c2d",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": ": ",
+                    "color": "#ff6c2d",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "頭にかぶる",
+                    "color": "#fdbd1a",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
               ]
             }
           ]
@@ -41,12 +64,26 @@
           "name": "minecraft:ender_eye",
           "functions": [
             {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:670022}"
+            },
+            {
               "function": "minecraft:set_name",
               "entity": "this",
               "name": {
                 "text": "10円玉",
                 "italic": false
               }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "ひきちぎった10円玉 10ビッツの価値がある",
+                  "color": "#f65bfe",
+                  "italic": false
+                }
+              ]
             }
           ]
         },
@@ -54,7 +91,31 @@
           "type": "minecraft:loot_table",
           "weight": 1,
           "quality": 1,
-          "name": "battle:bits/100000"
+          "name": "battle:bits/100000",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "10円玉",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "ひきちぎった10円玉 10000ビッツの価値がある",
+                  "color": "#f65bfe",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:670022}"
+            }
+          ]
         }
       ]
     },
@@ -63,49 +124,51 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 10,
-          "quality": 5,
-          "name": "minecraft:ender_eye",
+          "name": "minecraft:tropical_fish",
           "functions": [
             {
               "function": "minecraft:set_name",
               "entity": "this",
               "name": {
-                "text": "金リンゴ",
+                "text": "ごんかねの胴体",
                 "italic": false
               }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 70,
-          "quality": -5,
-          "name": "minecraft:ender_eye",
-          "functions": [
+            },
             {
-              "function": "minecraft:set_name",
-              "entity": "this",
-              "name": {
-                "text": "ベイクドポテト",
-                "italic": false
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 20,
-          "quality": -10,
-          "name": "minecraft:ender_eye",
-          "functions": [
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "ひきちぎった胴体 プラスチックの味がする",
+                  "color": "#f65bfe",
+                  "italic": false
+                },
+                "",
+                [
+                  {
+                    "keybind": "key.use長押し",
+                    "color": "#ff6c2d",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": ": ",
+                    "color": "#ff6c2d",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "たべる",
+                    "color": "#fdbd1a",
+                    "bold": false,
+                    "italic": false
+                  }
+
+                ]
+              ]
+            },
             {
-              "function": "minecraft:set_name",
-              "entity": "this",
-              "name": {
-                "text": "クモの目",
-                "italic": false
-              }
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:670023}"
             }
           ]
         }

@@ -6,6 +6,8 @@
 execute as @a run attribute @s generic.max_health base set 40
 
 ## しばらく無敵化エフェクト
+effect clear @a
+effect give @a resistance 10 100 true
 
 ## ボスバー
 bossbar add a "A"
