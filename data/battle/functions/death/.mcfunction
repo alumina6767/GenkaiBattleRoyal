@@ -1,6 +1,7 @@
 #> battle:death/
 # 死亡時
 # @internal
+# @api
 
 #> 
 # @private

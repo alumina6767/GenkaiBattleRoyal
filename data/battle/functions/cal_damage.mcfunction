@@ -1,4 +1,4 @@
-#> battle:show_damage
+#> battle:cal_damage
 # ダメージを表示
 # @internal
 
@@ -25,15 +25,7 @@ scoreboard players operation now _ -= before _
 scoreboard players operation now _ /= 100 const
 
 ## インジゲータを作る
-execute if score now _ matches -2.. run data merge block 0 -63 0 {Text2:'[{"score":{"name":"now","objective":"_"},"color":"yellow"}]'}
-execute if score now _ matches -5..-3 run data merge block 0 -63 0 {Text2:'[{"score":{"name":"now","objective":"_"},"color":"gold"}]'}
-execute if score now _ matches ..-6 run data merge block 0 -63 0 {Text2:'[{"score":{"name":"now","objective":"_"},"color":"red"}]'}
-
-execute rotated ~ 0 run summon item ^ ^1.8 ^-0.5 {NoGravity:1b,CustomNameVisible:1b,Age:5980,PickupDelay:32767,Motion:[0.0,0.02,0.0],Tags:["new"],Item:{id:"minecraft:stone_button",Count:1b}}
-data modify entity @e[type=item,tag=new,limit=1] CustomName set from block 0 -63 0 Text2
-
-## タグを消す
-tag @e[type=item,tag=new] remove new
+execute if score now _ matches ..-1 run function battle:show_damage/
 
 ## スコアリセット
 scoreboard players reset before _
