@@ -8,12 +8,13 @@
     #declare tag battle.invulnerable ダメージ処理を行わないエンティティ
     #declare score_holder clock
     #declare score_holder interval
-    #declare score_holder compass.slot
-    #declare score_holder slot
-    #declare score_holder tarako.interval
-    #declare score_holder battle.team
+    #declare score_holder compass.slot コンパスのあるスロット
+    #declare score_holder slot 現在探索中のスロット
+    #declare score_holder tarako.interval たらこの処理の間隔
+    #declare score_holder battle.team ゲーム内のチーム情報
     #declare score_holder commpass.timer 0の時コンパスの処理を実行
     #declare score_holder cron.timer 0の時定期実行の処理を行う
+    #declare score_holder game.phase ゲームのフェーズ 0:ロビー 1:ゲーム準備中 2:ゲーム中 3:ゲーム終了時 -1:デバッグ
 
 ## 最大HP
 scoreboard objectives add max_health dummy
