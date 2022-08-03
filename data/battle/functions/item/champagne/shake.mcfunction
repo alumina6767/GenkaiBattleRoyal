@@ -49,4 +49,4 @@ scoreboard players operation _ _ = @s uuid3
 execute anchored eyes positioned ^ ^ ^ as @e[type=slime,tag=champagne,distance=..5] if score @s uuid3 = _ _ run function battle:item/champagne/change_slime
 
 ## 進捗をリセット
-advancement revoke @s only battle:champagne/shake
+advancement revoke @s only battle:item/champagne/shake

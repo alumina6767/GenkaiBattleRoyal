@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Battle:{\"ID\":\"champagne\",Shake:0},CustomModelData:670040,CustomPotionEffects:[{Id:9b,Amplifier:2b,Duration:200},{Id:10b,Amplifier:5b,Duration:40}]}"
+              "tag": "{Battle:{\"ID\":\"champagne\",Shake:0},CustomModelData:670040,Potion:\"minecraft:water\",HideFlags:32}"
             },
             {
               "function": "minecraft:set_name",
@@ -31,6 +31,18 @@
                   "color": "#f65bfe",
                   "italic": false
                 },
+                "",
+                {
+                  "text": "再生能力 VI (0:02)",
+                  "color": "red",
+                  "italic": false
+                },
+                {
+                  "text": "吐き気 III (0:10)",
+                  "color": "blue",
+                  "italic": false
+                },
+
                 "",
                 [
                   {
