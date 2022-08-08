@@ -12,7 +12,7 @@ scoreboard players add @s interval.jump_pad 4
 schedule function battle:item/jump_pad_small_2/tick 1t append
 
 ## ジャンプパッド
-execute rotated ~ ~ positioned ^ ^ ^1 run summon falling_block ~ ~-0.3 ~ {BlockState:{Name:"minecraft:slime_block"},NoGravity:1b,Time:300,DropItem:false,Tags:["new","jpad_s2"]}
+execute rotated ~ ~ positioned ^ ^ ^1 run summon falling_block ~ ~-0.3 ~ {BlockState:{Name:"minecraft:big_dripleaf",Properties:{facing:"east",tilt:"unstable"}},NoGravity:1b,Time:300,DropItem:false,Tags:["new","jpad_s2"]}
 
 ## 音
 function battle:item/jump_pad_small_2/sound
