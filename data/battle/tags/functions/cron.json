@@ -40,6 +40,8 @@
         "battle:item/umeneri/particle_tuba",
         "battle:item/umeneri/tick/",
 
-        "battle:show_damage/loop"
+        "battle:show_damage/loop",
+
+        "battle:game/phase3/respawn_tick"
     ]
 }
