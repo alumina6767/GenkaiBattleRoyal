@@ -27,16 +27,36 @@ execute if score start_timer battle matches 220 run effect give @a speed 12 0 fa
 
 ## カウントダウン
 execute if score start_timer battle matches 220 run title @a title "10"
+execute if score start_timer battle matches 220 run playsound ui.button.click player @a ~ ~ ~ 1 1 1
+
 execute if score start_timer battle matches 240 run title @a title "9"
+execute if score start_timer battle matches 240 run playsound ui.button.click player @a ~ ~ ~ 1 1 1
+
 execute if score start_timer battle matches 260 run title @a title "8"
+execute if score start_timer battle matches 260 run playsound ui.button.click player @a ~ ~ ~ 1 1 1
+
 execute if score start_timer battle matches 280 run title @a title "7"
+execute if score start_timer battle matches 280 run playsound ui.button.click player @a ~ ~ ~ 1 1 1
+
 execute if score start_timer battle matches 300 run title @a title "6"
+execute if score start_timer battle matches 300 run playsound ui.button.click player @a ~ ~ ~ 1 1 1
+
 execute if score start_timer battle matches 320 run title @a title "5"
+execute if score start_timer battle matches 320 run playsound ui.button.click player @a ~ ~ ~ 1 1 1
+
 execute if score start_timer battle matches 340 run title @a title "4"
+execute if score start_timer battle matches 340 run playsound ui.button.click player @a ~ ~ ~ 1 1 1
+
 execute if score start_timer battle matches 360 run title @a title "3"
+execute if score start_timer battle matches 360 run playsound ui.button.click player @a ~ ~ ~ 1 1 1
+
 execute if score start_timer battle matches 380 run title @a title "2"
+execute if score start_timer battle matches 380 run playsound ui.button.click player @a ~ ~ ~ 1 1 1
+
 execute if score start_timer battle matches 400 run title @a title "1"
+
 execute if score start_timer battle matches 420 run title @a title "start!"
+execute if score start_timer battle matches 420 run playsound entity.generic.explode player @a ~ ~ ~ 1 1 1
 
 ## インクリメント
 scoreboard players add start_timer battle 1
