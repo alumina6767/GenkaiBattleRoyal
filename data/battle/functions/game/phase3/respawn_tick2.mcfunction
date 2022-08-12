@@ -21,9 +21,8 @@ execute if score @s battle.respawn_cd matches 040 at @s run playsound minecraft:
 execute if score @s battle.respawn_cd matches 020 run title @s title "1"
 execute if score @s battle.respawn_cd matches 020 at @s run playsound minecraft:block.respawn_anchor.charge player @s ~ ~ ~ 1 2.0 1
 
-## 体力や満腹度の回復
+## 体力の回復
 execute if score @s battle.respawn_cd matches 040 run effect give @s instant_health 1 100 true
-execute if score @s battle.respawn_cd matches 040 run effect give @s saturation 1 100 true
 
 ## 終了処理
 ### しばらく無敵化
