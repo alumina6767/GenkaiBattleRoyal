@@ -3,7 +3,7 @@
 # @internal
 
 #> 
-# @within battle:game/start/**
+# @within battle:game/**
     #declare score_holder start_timer スタート処理に使うタイマー
 
 ## タイミングスコア

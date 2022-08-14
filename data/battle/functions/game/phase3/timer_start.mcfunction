@@ -7,8 +7,8 @@ bossbar add battle.game_timer "制限時間"
 bossbar set battle.game_timer color green 
 
 ## 値の設定
-scoreboard players operation battle.game_timer battle = 制限時間 battle.setting
-execute store result bossbar battle.game_timer max run scoreboard players get 制限時間 battle.setting
+scoreboard players operation battle.game_timer battle = #battle.game_timer.limit battle.setting
+execute store result bossbar battle.game_timer max run scoreboard players get #battle.game_timer.limit battle.setting
 
 ## 全員に見せる
 bossbar set battle.game_timer visible true

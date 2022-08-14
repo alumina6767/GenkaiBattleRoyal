@@ -19,7 +19,8 @@
     #declare score_holder タイム制 タイム制であることを表示するためだけのもの
     #declare score_holder ボスバトル制 ボスバトル制であることを表示するためだけのもの
     #declare tag battle.map_center マップの中心にあるエンティティにあるタグ
-    #declare score_holder 制限時間 ゲームの制限時間
+    #declare score_holder #battle.game_timer.limit ゲームの制限時間
+    #declare score_holder 制限時間 分単位表示用
     #declare score_holder battle.game_timer ゲームの現在時刻
 
 ## 最大HP
@@ -57,3 +58,7 @@ scoreboard objectives add battle.kill_point dummy "キルポイント"
 
 ## リスポーンクールダウン
 scoreboard objectives add battle.respawn_cd dummy "リスポーンクールダウン"
+
+## ゲームの制限時間
+execute unless score #battle.game_timer.limit battle.setting matches -2147483648..2147483647 run scoreboard players set 制限時間 battle.setting 5
+execute unless score #battle.game_timer.limit battle.setting matches -2147483648..2147483647 run scoreboard players set #battle.game_timer.limit battle.setting 6000

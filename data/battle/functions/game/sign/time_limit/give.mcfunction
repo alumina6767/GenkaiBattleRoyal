@@ -1,0 +1,1 @@
+give @s dark_oak_sign{BlockEntityTag:{Text2:'{"text":"TIME LIMIT","color":"#FFEDD6"}',Text3:'[{"text":"","color":"#FF5517"},{"text": "<<< "},{"score":{"objective": "battle.setting","name": "制限時間"}},{"text": " minutes >>>"}]',Text4:'[{"text": "","clickEvent": {"action": "run_command","value": "function battle:game/sign/time_limit/click"}}]'}}
