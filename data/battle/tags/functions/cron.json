@@ -38,6 +38,10 @@
         "battle:item/pyoniper2/reload/tick",
 
         "battle:item/umeneri/particle_tuba",
-        "battle:item/umeneri/tick/"
+        "battle:item/umeneri/tick/",
+
+        "battle:show_damage/loop",
+
+        "battle:game/phase3/respawn_tick"
     ]
 }

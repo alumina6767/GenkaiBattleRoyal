@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:potion"
+          ],
+          "potion": "minecraft:water",
+          "nbt": "{CustomModelData:670040}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "battle:item/champagne/drink"
+  }
+}

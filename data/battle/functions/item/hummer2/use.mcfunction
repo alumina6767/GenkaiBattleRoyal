@@ -23,10 +23,10 @@ gamemode spectator @s
 # execute if entity @s[y_rotation=-136..-45] run summon armor_stand ~ ~ ~ {Tags:["hummer2.dummy","new"],Silent:1b,Rotation:[270f,0f]}
 
 ## 乗り移る人形
-execute if entity @s[y_rotation=-44..45] run summon armor_stand ~ ~ ~ {Invisible:1b,Silent:1b,Tags:["hummer2","hummer2.dummy","new","battle.invulnerable"],Passengers:[{id:"area_effect_cloud",Duration:61,Tags:["hummer2","hummer2.body","new"]}]}
-execute if entity @s[y_rotation=46..135] run summon armor_stand ~ ~ ~ {Invisible:1b,Silent:1b,Tags:["hummer2","hummer2.dummy","new","battle.invulnerable"],Passengers:[{id:"area_effect_cloud",Duration:61,Tags:["hummer2","hummer2.body","new"]}]}
-execute unless entity @s[y_rotation=-136..135] run summon armor_stand ~ ~ ~ {Invisible:1b,Silent:1b,Tags:["hummer2","hummer2.dummy","new","battle.invulnerable"],Passengers:[{id:"area_effect_cloud",Duration:61,Tags:["hummer2","hummer2.body","new"]}]}
-execute if entity @s[y_rotation=-136..-45] run summon armor_stand ~ ~ ~ {Invisible:1b,Silent:1b,Tags:["hummer2","hummer2.dummy","new","battle.invulnerable"],Passengers:[{id:"area_effect_cloud",Duration:61,Tags:["hummer2","hummer2.body","new"]}]}
+summon armor_stand ~ ~ ~ {Invisible:1b,Silent:1b,Tags:["hummer2","hummer2.dummy","new","battle.invulnerable"],Passengers:[{id:"area_effect_cloud",Duration:61,Tags:["hummer2","hummer2.body","new"]}],CustomName:'{"text":"invisible"}'}
+#execute if entity @s[y_rotation=46..135] run summon armor_stand ~ ~ ~ {Invisible:1b,Silent:1b,Tags:["hummer2","hummer2.dummy","new","battle.invulnerable"],Passengers:[{id:"area_effect_cloud",Duration:61,Tags:["hummer2","hummer2.body","new"]}],CustomName:'{"text":"invisible"}'}
+#execute unless entity @s[y_rotation=-136..135] run summon armor_stand ~ ~ ~ {Invisible:1b,Silent:1b,Tags:["hummer2","hummer2.dummy","new","battle.invulnerable"],Passengers:[{id:"area_effect_cloud",Duration:61,Tags:["hummer2","hummer2.body","new"]}],CustomName:'{"text":"invisible"}'}
+#execute if entity @s[y_rotation=-136..-45] run summon armor_stand ~ ~ ~ {Invisible:1b,Silent:1b,Tags:["hummer2","hummer2.dummy","new","battle.invulnerable"],Passengers:[{id:"area_effect_cloud",Duration:61,Tags:["hummer2","hummer2.body","new"]}],CustomName:'{"text":"invisible"}'}
 
 ## バリアできるかの指定
 execute if entity @s[tag=!battle.boss] run tag @e[type=armor_stand,tag=new,tag=hummer2.dummy] add barrier.blockable

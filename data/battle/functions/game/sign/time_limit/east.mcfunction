@@ -1,0 +1,2 @@
+execute if block ~ ~ ~ dark_oak_wall_sign if blocks ~ ~0.4453125 ~0 ~ ~0.4453125 ~0 ~ ~ ~ all if blocks ~ ~-0.4296875 ~-0.7604166666666666 ~ ~-0.4296875 ~-0.7604166666666666 ~ ~ ~ all run function battle:game/sign/time_limit/decrease
+execute if block ~ ~ ~ dark_oak_wall_sign if blocks ~ ~0.4453125 ~0.7708333333333334 ~ ~0.4453125 ~0.7708333333333334 ~ ~ ~ all if blocks ~ ~-0.4296875 ~0 ~ ~-0.4296875 ~0 ~ ~ ~ all run function battle:game/sign/time_limit/increase

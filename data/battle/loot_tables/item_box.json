@@ -58,6 +58,31 @@
           "type": "loot_table",
           "name": "main:soudan_arrow",
           "weight": 10
+        },
+                {
+          "type": "loot_table",
+          "name": "battle:champagne/bottle",
+          "weight": 10
+        },
+                       {
+          "type": "loot_table",
+          "name": "battle:hummer2/hummer2",
+          "weight": 10
+        },
+                       {
+          "type": "loot_table",
+          "name": "battle:paint/brush",
+          "weight": 10
+        },
+                       {
+          "type": "loot_table",
+          "name": "battle:gonkane/gonkane",
+          "weight": 10
+        },
+                       {
+          "type": "loot_table",
+          "name": "battle:pyoniper2/pyoniper2",
+          "weight": 10
         }
       ]
     }

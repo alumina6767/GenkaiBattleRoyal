@@ -1,6 +1,7 @@
 #> battle:death/
 # 死亡時
 # @internal
+# @api
 
 #> 
 # @private
@@ -25,6 +26,9 @@ scoreboard players operation _ battle.hurt_by = @s battle.hurt_by
 
 ## とどめを刺したプレイヤーを特定
 execute as @a if score @s uuid3 = _ battle.hurt_by run tag @s add battle.killer
+
+## 自殺以外のとどめを刺したプレイヤーにスコアを加算
+execute unless entity @s[tag=battle.killer] run scoreboard players add @a[tag=battle.killer,limit=1] battle.kill_point 1
 
 ## 死因によって場合分け
 
@@ -67,6 +71,9 @@ scoreboard players reset @s battle.hurt_by
 scoreboard players reset @s battle.hurt_with
 
 #endregion
+
+## リスポーン
+execute if score #game.mode battle.setting matches 2 run function battle:game/phase3/respawn
 
 ## 進捗リセット
 advancement revoke @s only battle:died

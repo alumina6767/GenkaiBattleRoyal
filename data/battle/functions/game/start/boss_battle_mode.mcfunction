@@ -1,5 +1,5 @@
-#> battle:game/start
-# スタートの処理
+#> battle:game/start/boss_battle_mode
+# ボスバトル時の初期設定
 # @internal
 
 ## 体力の最大値を設定
@@ -7,7 +7,7 @@ execute as @a run attribute @s generic.max_health base set 40
 
 ## しばらく無敵化エフェクト
 effect clear @a
-effect give @a resistance 10 100 true
+effect give @a resistance 10 100 false
 
 ## ボスバー
 bossbar add a "A"

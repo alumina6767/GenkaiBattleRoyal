@@ -29,7 +29,8 @@
                 "",
                 [
                   {
-                    "keybind": "key.use長押し",
+                    "keybind": "key.use",
+                    "text":"長押し",
                     "color": "#ff6c2d",
                     "bold": true,
                     "italic": false

@@ -3,7 +3,7 @@
 # @internal
 
 ## ダメージの表示
-function battle:show_damage
+function battle:cal_damage
 
 ## 進捗をリセット
 advancement revoke @s only battle:hurt
