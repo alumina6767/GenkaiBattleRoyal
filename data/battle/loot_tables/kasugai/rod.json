@@ -1,0 +1,73 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:carrot_on_a_stick",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": {
+                  "text": "某市",
+                  "color": "white",
+                  "italic": false
+                }
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  {
+                    "text": "見覚えのある某市。",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "使用すると攻撃力上昇IIが2分間付与されるが",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "効果が切れると凍結して死亡する。",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "   "
+                  },
+                  [
+                    {
+                      "keybind": "key.use",
+                      "color": "#ff6c2d",
+                      "bold": true,
+                      "italic": false
+                    },
+                    {
+                      "text": ": ",
+                      "color": "#ff6c2d",
+                      "bold": false,
+                      "italic": false
+                    },
+                    {
+                      "text": "某市を使用する",
+                      "color": "#fdbd1a",
+                      "bold": false,
+                      "italic": false
+                    }
+                  ]
+                ]
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:0,kasugai:1b}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
