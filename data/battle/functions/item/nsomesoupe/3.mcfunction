@@ -1,4 +1,4 @@
-item modify entity @s weapon.mainhand weapons:nsomesoupe_3
+execute as @s at @s run item modify entity @s weapon.mainhand battle:nsomesoupe_3
 scoreboard players set @s nsomesoupe 1201
 
 #ダメージ

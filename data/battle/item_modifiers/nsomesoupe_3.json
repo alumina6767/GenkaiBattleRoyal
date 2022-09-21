@@ -1,0 +1,15 @@
+[
+    {
+        "function": "minecraft:set_nbt",
+        "tag": "{Nsomesoupe:[added]}"
+      
+    },
+    {
+      "function": "minecraft:set_enchantments",
+      "enchantments": {
+        "minecraft:knockback": 5
+      },
+      "add": false
+    }
+  ]
+  
