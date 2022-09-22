@@ -5,6 +5,7 @@
         "battle:item/gonkane/if",
         "battle:item/gutitubo/if",
         "battle:item/jump_pad_small_2/if",
-        "battle:item/paint/if"
+        "battle:item/paint/if",
+        "battle:item/cat/if"
     ]
 }

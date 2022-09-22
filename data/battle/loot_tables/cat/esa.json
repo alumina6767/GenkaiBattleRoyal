@@ -1,0 +1,58 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ender_eye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:670150}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "猫のえさ",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "猫を呼ぶことができる",
+                  "color": "#f65bfe",
+                  "italic": false
+                },
+                "",
+                [
+                  {
+                    "keybind": "key.use",
+                    "color": "#ff6c2d",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": ": ",
+                    "color": "#ff6c2d",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "猫を呼ぶ",
+                    "color": "#fdbd1a",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
