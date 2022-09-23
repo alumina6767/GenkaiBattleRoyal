@@ -1,5 +1,5 @@
 #検知用
-execute as @a[nbt={SelectedItem:{tag:{Nsomesoupe:[]}}},scores={Rod=1..,nsomesoupe=..0}] at @s run function battle:item/nsomesoupe/summon
+execute as @a[nbt={SelectedItem:{tag:{Nsomesoupe:[]}}},scores={Rod=1..}] unless entity @s[scores={nsomesoupe=1..}] at @s run function battle:item/nsomesoupe/summon
 #クールダウン
 execute as @a[nbt={SelectedItem:{tag:{Nsomesoupe:["added"]}}},scores={Rod=1..,nsomesoupe=1..}] at @s run function battle:item/nsomesoupe/cooldown
 
