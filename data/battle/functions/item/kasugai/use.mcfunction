@@ -11,5 +11,3 @@ scoreboard players set @s kasugai.time 2400
 scoreboard players reset @s kasugai.use
 #> clear
 item replace entity @s weapon.mainhand with air
-#> advancements
-advancement revoke @s only battle:item/kasugai/rod

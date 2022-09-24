@@ -10,8 +10,6 @@
     #declare tag ThrowHammer ピコハン
 
 ## scoreの作成
-# / ハンマー
-scoreboard objectives add gunhammer.throw used:carrot_on_a_stick "斧を投げる"
 # / 銃
 scoreboard objectives add gunhammer.rate dummy "銃レート"
 scoreboard objectives add gunhammer.bullet dummy "水鉄砲の弾"

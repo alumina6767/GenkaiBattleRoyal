@@ -15,6 +15,4 @@ function battle:item/gun_hammer/hammer/motion
 
 #> リセット
 item replace entity @s weapon.mainhand with air
-advancement revoke @s only battle:item/gun_hammer/throw_hammer
 tag @e[type=armor_stand,tag=new] remove new
-scoreboard players set @s gunhammer.throw 0

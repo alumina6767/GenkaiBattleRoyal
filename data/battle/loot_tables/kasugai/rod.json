@@ -5,7 +5,7 @@
         "entries": [
           {
             "type": "minecraft:item",
-            "name": "minecraft:carrot_on_a_stick",
+            "name": "minecraft:warped_fungus_on_a_stick",
             "functions": [
               {
                 "function": "minecraft:set_name",
@@ -62,7 +62,7 @@
               },
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{CustomModelData:0,kasugai:1b}"
+                "tag": "{CustomModelData:670143,kasugai:1b}"
               }
             ]
           }
