@@ -16,6 +16,8 @@
         "battle:item/paint/load",
         "battle:item/hummer/load",
         "battle:item/hummer2/load",
-        "battle:item/gun_hammer/load"
+        "battle:item/gun_hammer/load",
+        "battle:item/nsomesoupe/load",
+        "battle:item/kasugai/load"
     ]
 }
