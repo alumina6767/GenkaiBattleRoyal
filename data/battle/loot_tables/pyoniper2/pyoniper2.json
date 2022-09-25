@@ -13,7 +13,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:670080}"
+              "tag": "{CustomModelData:670080,CustomItemData:{pyoniper2:1b}}"
             },
             {
               "function": "minecraft:set_name",
