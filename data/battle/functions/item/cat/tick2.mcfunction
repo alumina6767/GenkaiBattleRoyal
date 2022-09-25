@@ -37,15 +37,16 @@ execute if score @s battle matches 51..999 if predicate battle:chance/0.2 run pl
 ## 着地しているか
 execute if entity @s[scores={battle=..999}] if entity @s[nbt={OnGround:1b}] run scoreboard players set @s battle 999
 
-## 着地していたら
+## 着地していたら 座らせて NoAI
 execute if score @s battle matches 1000 run playsound item.trident.thunder player @a ~ ~ ~ 1.0 0.5 0.0
-execute if score @s battle matches 1000 run data merge entity @s {Sitting:1b}
+execute if score @s battle matches 1000 run data merge entity @s {Sitting:1b,NoAI:1b}
 execute if score @s battle matches 1000..1059 run tp @s ~ ~ ~ ~ ~
 
 ## 着時後停止 アイテムを置いて そして射出
 execute if score @s battle matches 1030 run summon item ^ ^1.0 ^1.0 {Item:{id:"stone",Count:1b},Glowing:1b}
 execute if score @s battle matches 1030 run playsound entity.chicken.egg player @a ~ ~ ~ 1.0 1.0 0.0
 
+execute if score @s battle matches 1060 run data merge entity @s {NoAI:0b}
 execute if score @s battle matches 1060..1100 run data merge entity @s {Motion:[0.0,0.1,0.0]}
 
 execute if score @s battle matches 1101 run data merge entity @s {Motion:[0.0,5.0,0.0]}
