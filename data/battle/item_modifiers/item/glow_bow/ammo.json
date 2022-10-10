@@ -1,16 +1,30 @@
 [
   {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "temp:"
+    },
+    "ops": [
+      {
+        "source": "damage",
+        "target": "ammo",
+        "op": "replace"
+      }
+    ]
+  },
+  {
     "function": "minecraft:set_name",
     "entity": "this",
     "name": [
       {
         "text": "発光棘弓 ",
-        "color": "green",
+        "color": "white",
         "italic": false
       },
       {
-        "text": " [ ",
-        "color": "gold",
+        "text": "| ",
+        "color": "gray",
         "italic": false
       },
       {
@@ -18,118 +32,13 @@
           "name": "_",
           "objective": "_"
         },
-        "color": "gold",
-        "bold": false
+        "color": "gray",
+        "italic": false
       },
       {
-        "text": " ]",
-        "color": "gold",
+        "text": " |",
+        "color": "gray",
         "italic": false
-      }
-    ]
-  },
-  {
-    "function": "minecraft:set_nbt",
-    "tag": "{ammo:0,max:0b}",
-    "conditions": [
-      {
-        "condition": "minecraft:entity_properties",
-        "entity": "this",
-        "predicate": {
-          "type": "minecraft:player",
-          "equipment": {
-            "mainhand": {
-              "items": [
-                "minecraft:bow"
-              ],
-              "nbt": "{ammo:1}"
-            }
-          }
-        }
-      }
-    ]
-  },
-  {
-    "function": "minecraft:set_nbt",
-    "tag": "{ammo:1,max:0b}",
-    "conditions": [
-      {
-        "condition": "minecraft:entity_properties",
-        "entity": "this",
-        "predicate": {
-          "type": "minecraft:player",
-          "equipment": {
-            "mainhand": {
-              "items": [
-                "minecraft:bow"
-              ],
-              "nbt": "{ammo:2}"
-            }
-          }
-        }
-      }
-    ]
-  },
-  {
-    "function": "minecraft:set_nbt",
-    "tag": "{ammo:2,max:0b}",
-    "conditions": [
-      {
-        "condition": "minecraft:entity_properties",
-        "entity": "this",
-        "predicate": {
-          "type": "minecraft:player",
-          "equipment": {
-            "mainhand": {
-              "items": [
-                "minecraft:bow"
-              ],
-              "nbt": "{ammo:3}"
-            }
-          }
-        }
-      }
-    ]
-  },
-  {
-    "function": "minecraft:set_nbt",
-    "tag": "{ammo:3,max:0b}",
-    "conditions": [
-      {
-        "condition": "minecraft:entity_properties",
-        "entity": "this",
-        "predicate": {
-          "type": "minecraft:player",
-          "equipment": {
-            "mainhand": {
-              "items": [
-                "minecraft:bow"
-              ],
-              "nbt": "{ammo:4}"
-            }
-          }
-        }
-      }
-    ]
-  },
-  {
-    "function": "minecraft:set_nbt",
-    "tag": "{ammo:4,max:0b}",
-    "conditions": [
-      {
-        "condition": "minecraft:entity_properties",
-        "entity": "this",
-        "predicate": {
-          "type": "minecraft:player",
-          "equipment": {
-            "mainhand": {
-              "items": [
-                "minecraft:bow"
-              ],
-              "nbt": "{ammo:5}"
-            }
-          }
-        }
       }
     ]
   }

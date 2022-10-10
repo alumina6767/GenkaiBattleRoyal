@@ -1,62 +1,125 @@
 {
-  "pools": [
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:bow",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:127,Unbreakable:1b}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "entity": "this",
-              "name": [
-                {
-                  "text": "発光棘弓 ",
-                  "color": "green",
-                  "italic": false
-                },
-                {
-                  "text": " [ 5 ]",
-                  "color": "gold",
-                  "italic": false
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_lore",
-              "entity": "this",
-              "lore": [
-                [
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:bow",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                  [
+                    {
+                      "text": "発光棘弓 ",
+                      "color": "white",
+                      "italic": false
+                    },
+                    {
+                      "text": "| 5 |",
+                      "color": "gray",
+                      "bold": false,
+                      "italic": false
+                    }
+                  ]
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
                   {
-                    "text": "発光時間 : 9sec",
-                    "color": "white",
+                    "text": "トゲトゲな弓。放つのに矢が必要ない特別な弓。",
+                    "color": "light_purple",
                     "italic": false
-                  }
-                ],
-                {
-                  "text": "弾の上限 : 5発",
-                  "color": "white",
-                  "italic": false
-                },
-                {
-                  "text": "クールタイム : 75sec",
-                  "color": "white",
-                  "italic": false
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{glow_bow:1b,ammo:5,max:1b,CustomModelData:670100}"
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
+                  },
+                  [
+                    {
+                      "text": "放たれた矢に触れた者を",
+                      "color": "light_purple",
+                      "italic": false
+                    },
+                    {
+                      "text": "9秒間",
+                      "color": "gold",
+                      "bold": true,
+                      "italic": false
+                    },
+                    {
+                      "text": "発光させる。",
+                      "color": "light_purple",
+                      "bold": false,
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "text": "矢は",
+                      "color": "light_purple",
+                      "italic": false
+                    },
+                    {
+                      "text": "5本",
+                      "color": "gold",
+                      "bold": true,
+                      "italic": false
+                    },
+                    {
+                      "text": "までストックが可能。",
+                      "color": "light_purple",
+                      "bold": false,
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "text": "矢は",
+                      "color": "light_purple",
+                      "bold": false,
+                      "italic": false
+                    },
+                    {
+                      "text": "75秒ごとに一本",
+                      "color": "gold",
+                      "bold": true,
+                      "italic": false
+                    },
+                    {
+                      "text": "補充される。",
+                      "color": "light_purple",
+                      "bold": false,
+                      "italic": false
+                    }
+                  ],
+                  {
+                    "text": "  "
+                  },
+                  [
+                    {
+                      "text": "右クリック長押し -> 離す : ",
+                      "color": "#ff6c2d",
+                      "bold": true,
+                      "italic": false
+                    },
+                    {
+                      "text": " 発光棘弓を放つ",
+                      "color": "#fdbd1a",
+                      "bold": false,
+                      "italic": false
+                    }
+                  ]
+                ]
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{ammo:5,CustomModelData:670100,Unbreakable:true}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,41 @@
+{
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Inventory:[{id:\"minecraft:bow\",tag:{ammo:0}}]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Inventory:[{id:\"minecraft:bow\",tag:{ammo:1}}]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Inventory:[{id:\"minecraft:bow\",tag:{ammo:2}}]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Inventory:[{id:\"minecraft:bow\",tag:{ammo:3}}]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Inventory:[{id:\"minecraft:bow\",tag:{ammo:4}}]}"
+        }
+      }
+    ]
+  }
+  

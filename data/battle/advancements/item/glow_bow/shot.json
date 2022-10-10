@@ -1,0 +1,57 @@
+{
+    "criteria": {
+      "mainhand": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "equipment": {
+                      "mainhand": {
+                        "items": [
+                          "minecraft:bow"
+                        ],
+                        "nbt": "{CustomModelData:670100}"
+                      }
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "equipment": {
+                      "offhand": {
+                        "items": [
+                          "minecraft:bow"
+                        ],
+                        "nbt": "{CustomModelData:670100}"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "glowbow.shot": {
+                  "min": 1
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "battle:item/glow_bow/if"
+    }
+  }
+  

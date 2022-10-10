@@ -1,31 +1,19 @@
 #> battle:item/glow_bow/shot
-# - 発光棘弓を放つ
-# @internal
+#> 矢を発射する
 
-#>
-# @private
-    #declare score_holder -1
+#> 自身が発射した矢にタグを付与する
+execute store result score owner[0] _ run data get entity @s UUID[0]
+execute as @e[type=arrow,limit=5,distance=..5] store result score @s _ run data get entity @s Owner[0]
 
-# 不足
-execute if entity @s[nbt={SelectedItem:{tag:{glow_bow:1b,ammo:0}}}] run function battle:item/glow_bow/ammo_shortege
+execute as @e[type=arrow,limit=5,distance=..5] if score @s _ = owner[0] _ run tag @s add GlowArrow
+execute as @e[type=arrow,limit=5,distance=..5] if score @s _ = owner[0] _ run data merge entity @s {life:1200s,crit:false}
 
-# 近くの矢にタグ付与
-execute if entity @s[nbt=!{SelectedItem:{tag:{glow_bow:1b,ammo:0}}}] run tag @e[type=arrow,sort=nearest,distance=..2.5,limit=1] add Item.glowbow.arrow
-execute if entity @s[nbt=!{SelectedItem:{tag:{glow_bow:1b,ammo:0}}}] run data merge entity @e[type=arrow,sort=nearest,distance=..2.5,limit=1] {life:1200s}
-execute if entity @s[nbt={Inventory:[{id:"minecraft:bow",tag:{ammo:0}}]}]
-# 弓の残弾を減らす
-execute store result score _ _ run data get entity @s SelectedItem.tag.ammo
-scoreboard players set -1 _ 1
-scoreboard players operation _ _ -= -1 _
-execute if score _ _ matches 0.. run item modify entity @s weapon.mainhand battle:item/glow_bow/ammo
+#> リセット
+scoreboard players reset @e[type=arrow,limit=5,distance=..5] _
+scoreboard players reset owner[0] _
 
-# もし通常の矢を持っていたら矢を1本与える(ゴーストアイテム対策で一度消す)
-execute if entity @s[tag=!Item.glowbow.arrow.have] run loot give @s loot battle:glow_bow/normal_arrow
-execute if entity @s[tag=!Item.glowbow.arrow.have] run clear @s arrow 1
-execute if entity @s[tag=!Item.glowbow.arrow.have] run loot give @s loot battle:glow_bow/normal_arrow
+#> 矢をへらす
+scoreboard players remove _ _ 1
+execute store result storage temp: damage int 1 run scoreboard players get _ _
 
-# スコアリセット
-scoreboard players reset _ _
-scoreboard players reset -1 _
-
-scoreboard players set @s glowbow.use 0
+execute if entity @s[tag=weapon.mainhand] run item modify entity @s weapon.mainhand battle:item/glow_bow/ammo

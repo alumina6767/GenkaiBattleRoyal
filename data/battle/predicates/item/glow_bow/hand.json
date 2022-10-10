@@ -1,0 +1,36 @@
+[
+    {
+      "condition": "minecraft:alternative",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "mainhand": {
+                "items": [
+                  "minecraft:bow"
+                ],
+                "nbt": "{CustomModelData:670100}"
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "offhand": {
+                "items": [
+                  "minecraft:bow"
+                ],
+                "nbt": "{CustomModelData:670100}"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+  
