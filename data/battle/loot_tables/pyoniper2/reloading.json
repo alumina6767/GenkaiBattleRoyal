@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:670090}"
+              "tag": "{CustomModelData:670090,CustomItemData:{pyoniper2:1b}}"
             },
             {
               "function": "minecraft:set_name",
