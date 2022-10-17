@@ -67,7 +67,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:0,kasugai:1b}"
+              "tag": "{CustomModelData:670143,kasugai:1b}"
             }
           ]
         }
