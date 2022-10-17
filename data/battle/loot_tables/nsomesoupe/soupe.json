@@ -1,0 +1,51 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Nsomesoupe:[],CustomModelData:670170}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "ンソメスープ",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "スープ",
+                  "color": "#f65bfe",
+                  "italic": false
+                },
+                "",
+                [
+                  {
+                    "keybind": "key.use",
+                    "color": "#ff6c2d",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "アイテムを使用する",
+                    "color": "#fdbd1a",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
