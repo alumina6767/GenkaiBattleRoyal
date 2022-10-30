@@ -1,7 +1,7 @@
 {
   "pools": [
     {
-      "rolls": 3,
+      "rolls": 5,
       "entries": [
         {
           "type": "loot_table",
@@ -79,9 +79,39 @@
           "name": "battle:gonkane/gonkane",
           "weight": 10
         },
-                       {
+        {
           "type": "loot_table",
           "name": "battle:pyoniper2/pyoniper2",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "battle:cat/esa",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "battle:glow_bow/bow",
+          "weight": 10
+        },
+                {
+          "type": "loot_table",
+          "name": "battle:gun_eva/eva",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "battle:gun_hammer/new_gun",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "battle:kasugai/rod",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "battle:nsomesoupe/soupe",
           "weight": 10
         }
       ]
