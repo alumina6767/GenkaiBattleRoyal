@@ -21,7 +21,7 @@ scoreboard players operation @s uuid3 = _ uuid3
 scoreboard players operation @s battle.team = _ battle.team
 
 ## スピードの指定
-scoreboard players set @s hummer2.speed 100
+scoreboard players set @s hummer2.speed 180
 
 ## ハンマーをもたせる
 loot replace entity @s weapon.mainhand loot battle:hummer2/hummer2
