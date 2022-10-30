@@ -32,6 +32,9 @@ execute unless entity @s[tag=battle.killer] run scoreboard players add @a[tag=ba
 
 ## 死因によって場合分け
 
+## 殴り
+execute if score @s battle.hurt_with matches 1 run tellraw @a [{"selector":"@s"},{"text":"は","color": "gray"},{"selector":"@a[tag=battle.killer]"},{"text":"に殴り倒された","color": "gray"}]
+
 ## ビッツ
 execute if score @s battle.hurt_with matches 670000 run tellraw @a [{"selector":"@s"},{"text":"は","color": "gray"},{"selector":"@a[tag=battle.killer]"},{"text":"のちょっとした投げ銭で爆破された","color": "gray"}]
 execute if score @s battle.hurt_with matches 670001 run tellraw @a [{"selector":"@s"},{"text":"は","color": "gray"},{"selector":"@a[tag=battle.killer]"},{"text":"のそこそこの投げ銭で爆破された","color": "gray"}]
