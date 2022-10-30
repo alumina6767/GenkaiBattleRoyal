@@ -17,6 +17,12 @@ execute anchored eyes run tp @e[type=armor_stand,tag=new] ^ ^ ^2 facing entity @
 ## チームIDを取得
 scoreboard players operation _ battle.team = @s battle.team
 
+## もし、個人戦の時
+### Aチームに固定
+execute if score #game.mode battle.setting matches 2 run scoreboard players set _ battle.team 1
+### 召喚主に耐性エフェクトを付与
+execute if score #game.mode battle.setting matches 2 run effect give @s resistance 12 4 false
+
 ## 召喚主情報を取得
 scoreboard players operation _ uuid3 = @s uuid3
 
