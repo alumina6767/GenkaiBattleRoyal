@@ -26,6 +26,9 @@ data modify entity @e[type=fireball,tag=new,limit=1] Owner set from entity @s UU
 scoreboard players operation @e[type=fireball,tag=new,limit=1] uuid3 = @s uuid3
 scoreboard players operation @e[type=area_effect_cloud,tag=new,limit=1] uuid3 = @s uuid3
 
+## ダメージ情報を保存
+scoreboard players set @e[type=fireball,tag=new,limit=1] battle.hurt_with 670001
+
 ## 計算用マーカーをKill
 kill 00000006-0000-0007-0000-000000000007
 

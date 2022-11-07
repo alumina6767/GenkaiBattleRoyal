@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": [],
+        "damage": {
+          "type": {
+            "is_fire": true,
+            "direct_entity": {
+              "type": "minecraft:fireball"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "battle:item/bits/direct_damage"
+  }
+}
