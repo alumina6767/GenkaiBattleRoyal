@@ -9,11 +9,16 @@
 # 同じチームかどうか
 execute store result score is_same_team _ if predicate battle:same_team
 scoreboard players set is_same_team _ 0
-# 同じチームでない時ダメージ処理
-# 与えたいダメージを設定 (小数点2桁まで有効)
+
+## 同じチームでない時ダメージ処理
+# / 与えたいダメージを設定 (小数点2桁まで有効)
 execute if score is_same_team _ matches 0 run data modify storage score_damage: Argument set value {Damage:5.00}
-# 対象を実行者にしてfunctionを実行
+# / 対象を実行者にしてfunctionを実行
 execute if score is_same_team _ matches 0 as @s at @s run function score_damage:api/attack
+# / 盲目を付与する
+execute if score is_same_team _ matches 0 as @s at @s run effect give @s blindness 5 0 true
+
+
 
 # ダメージソース情報を保存
 #execute if score is_same_team _ matches 0 run scoreboard players operation @s battle.hurt_by = @e[type=armor_stand,tag=ThrowHammer,limit=1,sort=nearest] gunhammer.owner

@@ -23,7 +23,7 @@
                       "italic": false
                     },
                     {
-                      "text": "| 5 |",
+                      "text": "| 20 |",
                       "color": "gray",
                       "italic": false
                     }
@@ -49,7 +49,7 @@
                       "italic": false
                     },
                     {
-                      "text": "5",
+                      "text": "20",
                       "color": "green",
                       "bold": false,
                       "italic": false
@@ -100,7 +100,7 @@
               },
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{HideFlags:127,gunhammer:1b,ammo:5,ChargedProjectiles:[{id:\"minecraft:air\",Count:1b},{},{}],Charged:1b,CustomModelData:670140}"
+                "tag": "{HideFlags:127,gunhammer:1b,ammo:20,ChargedProjectiles:[{id:\"minecraft:air\",Count:1b},{},{}],Charged:1b,CustomModelData:670140}"
               }
             ]
           }
