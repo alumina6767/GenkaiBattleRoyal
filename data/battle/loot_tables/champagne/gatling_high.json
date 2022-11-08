@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Battle:{\"ID\":\"champagne\",Shake:50},Damage:1,CustomModelData:670040}"
+              "tag": "{Battle:{\"ID\":\"champagne\",Shake:55},Damage:1,CustomModelData:670040}"
             },
             {
               "function": "minecraft:set_name",

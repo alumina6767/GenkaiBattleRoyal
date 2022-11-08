@@ -20,7 +20,7 @@ data remove storage tmp Shake
 execute store result storage tmp Shake int 1 run scoreboard players get _ _
 
 ## 振り数を更新 lootコマンドに干渉するので例外処理も必要
-execute unless score _ _ matches 5 unless score _ _ matches 20 unless score _ _ matches 50 run item modify entity @s weapon.mainhand battle:shake
+execute unless score _ _ matches 5 unless score _ _ matches 20 unless score _ _ matches 55 unless score _ _ matches 56 run item modify entity @s weapon.mainhand battle:shake
 
 ## ストレージをリセット
 data remove storage tmp Shake
@@ -36,13 +36,13 @@ execute if score _ _ matches 20 run playsound minecraft:block.anvil.destroy play
 execute if score _ _ matches 20 run loot replace entity @s weapon.mainhand loot battle:champagne/gatling_normal
 
 ## シャンパンガトリングの強化
-execute if score _ _ matches 50 run particle dust 0.369 0.922 0.09 2 ~ ~1.0 ~ 1.0 0.1 1.0 1 30 force
-execute if score _ _ matches 50 run playsound minecraft:block.anvil.destroy player @a ~ ~ ~ 1 2 0
-execute if score _ _ matches 50 run loot replace entity @s weapon.mainhand loot battle:champagne/gatling_high
+execute if score _ _ matches 55 run particle dust 0.369 0.922 0.09 2 ~ ~1.0 ~ 1.0 0.1 1.0 1 30 force
+execute if score _ _ matches 55 run playsound minecraft:block.anvil.destroy player @a ~ ~ ~ 1 2 0
+execute if score _ _ matches 55 run loot replace entity @s weapon.mainhand loot battle:champagne/gatling_high
 
 ## 爆発するシャンパンガトリング
 execute if score _ _ matches 56 run playsound minecraft:block.anvil.destroy player @a ~ ~ ~ 1 2 0
-#execute if score _ _ matches 56 run loot replace entity @s weapon.mainhand loot battle:champagne/gatling_high
+execute if score _ _ matches 56 run loot replace entity @s weapon.mainhand loot battle:champagne/gatling_bomb
 
 ## 叩いたスライムはしばらく無敵になってしまうので取替え
 scoreboard players operation _ _ = @s uuid3

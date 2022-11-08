@@ -22,7 +22,7 @@ schedule function battle:item/pyoniper2/shoot/3 1t append
 schedule function battle:item/pyoniper2/bullet/tick 1t append
 
 ## リロード時間を設定
-scoreboard players add @s pyoniper2.reload 100
+scoreboard players add @s pyoniper2.reload 300
 
 ## リロード処理
 schedule function battle:item/pyoniper2/reload/tick 1t append
