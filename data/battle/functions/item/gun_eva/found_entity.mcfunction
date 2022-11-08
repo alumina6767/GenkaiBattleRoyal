@@ -6,7 +6,7 @@ execute if score is_same_team _ matches 0 run scoreboard players set .itt raycas
 
 ## 同じチームでない時ダメージ処理
 ### 与えたいダメージを設定 (小数点2桁まで有効)
-execute if score is_same_team _ matches 0 run data modify storage score_damage: Argument set value {Damage:5.50}
+execute if score is_same_team _ matches 0 run data modify storage score_damage: Argument set value {Damage:1.1}
 ### 対象を実行者にしてfunctionを実行
 execute if score is_same_team _ matches 0 run function score_damage:api/attack
 
