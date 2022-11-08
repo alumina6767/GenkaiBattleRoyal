@@ -3,7 +3,7 @@
 # @internal
 
 #>
-# @private
+# @within battle:game/sign/game_mode/**
     #declare tag battle.sign.game_mode ゲームモードを表示している看板があるところの額縁
 
 ## 看板の内容を更新
