@@ -6,6 +6,9 @@
 # @within battle:game/sign/time_limit/set_team/**
     #declare score_holder player_no プレイヤーの人数
 
+## 通知
+tellraw @a [{"selector":"@s","color": "gray"},{"text": "がチームをリセットしました。"}]
+
 ## チームをリセット
 team remove 11
 team remove 12
