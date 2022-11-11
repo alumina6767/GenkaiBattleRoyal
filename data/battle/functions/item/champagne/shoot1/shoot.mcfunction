@@ -10,8 +10,9 @@
 playsound entity.egg.throw player @a ~ ~ ~ 2.0 1.0 0.0
 
 ## 弾を召喚
-execute if entity @s[tag=!battle.boss] run summon armor_stand ~ ~ ~ {Tags:["champagne.bullet_low","new","champagne.bullet.first","barrier.blockable"],Small:1b,Marker:1b,Invisible:1b,Silent:1b,CustomName:'{"text":"invisible"}'}
-execute if entity @s[tag=battle.boss] run summon armor_stand ~ ~ ~ {Tags:["champagne.bullet_low","new","champagne.bullet.first"],Small:1b,Marker:1b,Invisible:1b,Silent:1b,CustomName:'{"text":"invisible"}'}
+execute if entity @s[tag=!battle.boss] run summon armor_stand ~ -1000 ~ {Tags:["champagne.bullet_low","new","champagne.bullet.first","barrier.blockable"],Small:1b,Marker:1b,Invisible:1b,Silent:1b,CustomName:'{"text":"invisible"}',ArmorItems:[{},{},{},{id:"flint",Count:1b,tag:{CustomModelData:670041}}]}
+execute if entity @s[tag=battle.boss] run summon armor_stand ~ -1000 ~ {Tags:["champagne.bullet_low","new","champagne.bullet.first"],Small:1b,Marker:1b,Invisible:1b,Silent:1b,CustomName:'{"text":"invisible"}',ArmorItems:[{},{},{},{id:"flint",Count:1b,tag:{CustomModelData:670041}}]}
+tp @e[type=armor_stand,tag=new] ~ ~ ~ ~ ~
 
 ## 射程距離を設定
 scoreboard players set @e[type=armor_stand,tag=new,distance=..1] champagne.time 40

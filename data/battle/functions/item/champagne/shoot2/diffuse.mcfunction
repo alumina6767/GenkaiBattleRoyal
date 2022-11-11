@@ -47,5 +47,11 @@ scoreboard players reset rand_y _
 scoreboard players reset x^2 _
 scoreboard players reset y^2 _
 
+## 弾の向きを調整
+data modify storage tmp Head set value [0f,0f,0f]
+data modify storage tmp Head[0] set from storage tmp Rotation[1]
+data modify entity @s Pose.Head set from storage tmp Head
+data remove storage tmp Head
+
 ## ストレージを削除
 data remove storage tmp Rotation
